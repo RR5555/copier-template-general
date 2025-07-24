@@ -1,8 +1,8 @@
 .DEFAULT_GOAL := help
 IMG_NAME ?= '{{img_name}}'
 
-{{ if use_docker }}docker-build: ## Build the Docker container
-	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .{{ endif }}
+{% if use_docker %}docker-build: ## Build the Docker container
+	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .{% endif %}
 
 
 docker-run: ## Run the Docker container
