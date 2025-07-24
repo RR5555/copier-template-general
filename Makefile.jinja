@@ -1,8 +1,9 @@
 .DEFAULT_GOAL := help
 IMG_NAME ?= '{{img_name}}'
 
-{% if use_docker %}docker-build: ## Build the Docker container
-	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .{% endif %}
+{% if len(docker_type) == 1 %}
+docker-build: ## Build the Docker container
+	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .
 
 
 docker-run: ## Run the Docker container
@@ -10,11 +11,39 @@ docker-run: ## Run the Docker container
 	--name $(IMG_NAME) $(IMG_NAME)
 
 
+docker-bash: ## Access container bash
+	docker exec -it $(IMG_NAME) /bin/bash
+
+{% endif %}
+
+{% if len(docker_type) == 2 %}
+docker-build: ## Build the Docker container
+	docker build -t $(IMG_NAME) -f ./Docker/vanilla/Dockerfile .
+
+
+docker-run: ## Run the Docker container
+	docker run --rm -it \
+	--name $(IMG_NAME) $(IMG_NAME)
+
 
 docker-bash: ## Access container bash
 	docker exec -it $(IMG_NAME) /bin/bash
 
 
+
+docker-build-gpu: ## Build the Docker container
+	docker build -t $(IMG_NAME)-gpu -f ./Docker/gpu/Dockerfile .
+
+
+docker-run-gpu: ## Run the Docker container
+	docker run --rm -it \
+	--name $(IMG_NAME)-gpu $(IMG_NAME)-gpu
+
+
+docker-bash-gpu: ## Access container bash
+	docker exec -it $(IMG_NAME)-gpu /bin/bash
+
+{% endif %}
 
 # https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 .PHONY: help
