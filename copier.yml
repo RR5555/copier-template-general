@@ -6,3 +6,27 @@ project_name:
 module_name:
     type: str
     help: What is your Python module name?
+
+
+
+
+
+docstring_template:
+  type: str
+  default: custom
+  help: What docstring template would you like to use?
+  choices:
+    - custom
+    - docblockr
+    - doxygen
+    - doxygen-notypes
+    - google
+    - google-notypes
+    - numpy
+    - numpy-notypes
+    - one-line-sphinx
+    - pep257
+    - sphinx
+    - sphinx-notypes
+
+
