@@ -1,4 +1,4 @@
-{{! Google Docstring Template }}
+{{! Custom Google Docstring Template }}
 {{summaryPlaceholder}}
 
 {{extendedSummaryPlaceholder}}
