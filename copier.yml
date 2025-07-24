@@ -8,7 +8,24 @@ module_name:
     help: What is your Python module name?
 
 
+use_docker:
+  type: bool
+  default: true
+  help: Do you want to use Docker?
 
+docker_type:
+  type: str
+  help: Which type of images do you want to use?
+  multiselect: true
+  choices:
+    - cpu
+    - gpu
+  when: "{{ use_docker }}"
+
+img_name:
+  type: str
+  help: What's the name of your Docker img to be created for this project?
+  when: "{{ use_docker }}"
 
 
 docstring_template:
