@@ -47,3 +47,12 @@ docstring_template:
     - sphinx-notypes
 
 
+doc_tool:
+  type: str
+  help: Which Documentation tool do you want to use?
+  choices:
+    - sphinx
+    - mkdocs
+  default: mkdocs
+
+
