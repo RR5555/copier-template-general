@@ -31,16 +31,16 @@ docker-bash: ## Access container bash
 
 
 
-docker-build-gpu: ## Build the Docker container
+docker-build-gpu: ## Build the Docker container [gpu]
 	docker build -t $(IMG_NAME)-gpu -f ./Docker/gpu/Dockerfile .
 
 
-docker-run-gpu: ## Run the Docker container
+docker-run-gpu: ## Run the Docker container [gpu]
 	docker run --rm -it \
 	--name $(IMG_NAME)-gpu $(IMG_NAME)-gpu
 
 
-docker-bash-gpu: ## Access container bash
+docker-bash-gpu: ## Access container bash [gpu]
 	docker exec -it $(IMG_NAME)-gpu /bin/bash
 
 {% endif %}
