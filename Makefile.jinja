@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 IMG_NAME ?= '{{img_name}}'
 
-{% if len(docker_type) == 1 %}
+{% if docker_type == ['cpu'] or docker_type == ['gpu'] %}
 docker-build: ## Build the Docker container
 	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .
 
@@ -16,7 +16,7 @@ docker-bash: ## Access container bash
 
 {% endif %}
 
-{% if len(docker_type) == 2 %}
+{% if docker_type == ['cpu','gpu'] %}
 docker-build: ## Build the Docker container
 	docker build -t $(IMG_NAME) -f ./Docker/vanilla/Dockerfile .
 
