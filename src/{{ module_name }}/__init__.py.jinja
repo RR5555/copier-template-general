@@ -1,14 +1,14 @@
-"""{{ ' '.join(elem[0].upper()+elem[1:] for elem in module_name.split('_'))}}.{% if project_description %}
+"""{{ project_name | replace('_',' ') }}.{% if project_description %}
 
 {{ project_description }}
 
 {% endif %}"""
 
-from .{{ module_name }} import {{ ''.join(elem[0].upper()+elem[1:] for elem in module_name.split('_'))}}
+from .{{ module_name }} import {{ module_name }}
 
 __version__ = '0.0.1'
 
-__all__ = [ '{{ ''.join(elem[0].upper()+elem[1:] for elem in module_name.split('_'))}}' ]
+__all__ = [ '{{ module_name }}' ]
 
 
 # TODO: look at https://jinja.palletsprojects.com/en/stable/templates/#list-of-builtin-filters
