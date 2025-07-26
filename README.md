@@ -12,3 +12,9 @@ find *.mustache | awk -F '.' '{print "mv "$1".mustache \"{% if docstring_templat
 
 
 
+## classifiers
+
+```bash
+curl https://pypi.org/classifiers/ | sed -n '/<h2>List of classifiers<\/h2>/,/<\/ul>/ p' | sed -n -E 's/.*?>(.*?)<\/a>/\1/ p' > test.txt
+cat test.txt | awk -F '\\s*::\\s*' '{print $1;}' | sort -u
+```
