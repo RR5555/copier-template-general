@@ -1,0 +1,45 @@
+
+project_name:
+  type: str
+  help: What is your project name?
+
+module_name:
+  type: str
+  help: What is your Python module name?
+
+project_description:
+  type: str
+  help: What does your pkg do?
+  multiline: true
+
+project_keywords:
+  type: str
+  help: Project keywords
+  default: '[]'
+  validator: >-
+        {% if not (project_keywords | regex_search('^\[(?:['"]\w+['"], ?)*['"]?\w*['"]?\]$')) %}
+        project_keywords must be a valid list of strings.
+        {% endif %}
+
+project_repo:
+  type: str
+  help: Project Repo
+
+project_homepage:
+  type: str
+  help: Project Homepage
+
+### Classifiers ###
+# https://pypi.org/classifiers/
+# TODO: Extract the classfiers and make them multichoices questions
+
+# project_intended_audience:
+#   type: str
+#   help: What is the project intended audience?
+#   multichoice: true
+#   choices:
+#     - 
+
+
+
+

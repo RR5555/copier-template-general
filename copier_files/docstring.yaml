@@ -1,0 +1,18 @@
+
+docstring_template:
+  type: str
+  default: custom
+  help: What docstring template would you like to use?
+  choices:
+    - custom
+    - docblockr
+    - doxygen
+    - doxygen-notypes
+    - google
+    - google-notypes
+    - numpy
+    - numpy-notypes
+    - one-line-sphinx
+    - pep257
+    - sphinx
+    - sphinx-notypes
