@@ -1,21 +1,10 @@
----
 !include project_development_status.yaml
----
 !include project_environment.yaml
----
 !include project_framework.yaml
----
 !include project_intended_audience.yaml
----
 !include project_license.yaml
----
 !include project_natural_language.yaml
----
 !include project_operating_system.yaml
----
 !include project_programming_language.yaml
----
 !include project_topic.yaml
----
 !include project_typing.yaml
----
