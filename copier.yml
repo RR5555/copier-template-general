@@ -35,6 +35,8 @@ doc_tool:
 
 _exclude:
   - "copier_files"
+  - ".git"
+  - "copier.yml"
 
 # _subdirectory: copier_files
 
