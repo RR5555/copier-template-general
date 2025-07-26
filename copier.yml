@@ -1,9 +1,9 @@
 # questions
 
 ---
-!import copier_files/setting.yaml
+!include copier_files/setting.yaml
 ---
-!import copier_files/project_details.yaml
+!include copier_files/project_details.yaml
 ---
 
 
