@@ -1,0 +1,20 @@
+project_development_status:
+  type: str
+  help: What is the project project development status?
+  multichoice: true
+  choices:
+
+    "1 - Planning":
+      value: "Development Status :: 1 - Planning"
+    "2 - Pre-Alpha":
+      value: "Development Status :: 2 - Pre-Alpha"
+    "3 - Alpha":
+      value: "Development Status :: 3 - Alpha"
+    "4 - Beta":
+      value: "Development Status :: 4 - Beta"
+    "5 - Production/Stable":
+      value: "Development Status :: 5 - Production/Stable"
+    "6 - Mature":
+      value: "Development Status :: 6 - Mature"
+    "7 - Inactive":
+      value: "Development Status :: 7 - Inactive"

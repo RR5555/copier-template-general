@@ -1,0 +1,150 @@
+project_environment:
+  type: str
+  help: What is the project project environment?
+  multichoice: true
+  choices:
+
+    "Console":
+      value: "Environment :: Console"
+    "Console :: Curses":
+      value: "Environment :: Console :: Curses"
+    "Console :: Framebuffer":
+      value: "Environment :: Console :: Framebuffer"
+    "Console :: Newt":
+      value: "Environment :: Console :: Newt"
+    "Console :: svgalib":
+      value: "Environment :: Console :: svgalib"
+    "GPU":
+      value: "Environment :: GPU"
+    "GPU :: NVIDIA CUDA":
+      value: "Environment :: GPU :: NVIDIA CUDA"
+    "GPU :: NVIDIA CUDA :: 1.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 1.0"
+    "GPU :: NVIDIA CUDA :: 10.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 10.0"
+    "GPU :: NVIDIA CUDA :: 10.1":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 10.1"
+    "GPU :: NVIDIA CUDA :: 10.2":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 10.2"
+    "GPU :: NVIDIA CUDA :: 1.1":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 1.1"
+    "GPU :: NVIDIA CUDA :: 11":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11"
+    "GPU :: NVIDIA CUDA :: 11.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.0"
+    "GPU :: NVIDIA CUDA :: 11.1":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.1"
+    "GPU :: NVIDIA CUDA :: 11.2":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.2"
+    "GPU :: NVIDIA CUDA :: 11.3":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.3"
+    "GPU :: NVIDIA CUDA :: 11.4":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.4"
+    "GPU :: NVIDIA CUDA :: 11.5":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.5"
+    "GPU :: NVIDIA CUDA :: 11.6":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.6"
+    "GPU :: NVIDIA CUDA :: 11.7":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.7"
+    "GPU :: NVIDIA CUDA :: 11.8":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 11.8"
+    "GPU :: NVIDIA CUDA :: 12":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 12"
+    "GPU :: NVIDIA CUDA :: 12 :: 12.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.0"
+    "GPU :: NVIDIA CUDA :: 12 :: 12.1":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.1"
+    "GPU :: NVIDIA CUDA :: 12 :: 12.2":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.2"
+    "GPU :: NVIDIA CUDA :: 12 :: 12.3":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.3"
+    "GPU :: NVIDIA CUDA :: 12 :: 12.4":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.4"
+    "GPU :: NVIDIA CUDA :: 12 :: 12.5":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.5"
+    "GPU :: NVIDIA CUDA :: 12 :: 12.6":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.6"
+    "GPU :: NVIDIA CUDA :: 2.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 2.0"
+    "GPU :: NVIDIA CUDA :: 2.1":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 2.1"
+    "GPU :: NVIDIA CUDA :: 2.2":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 2.2"
+    "GPU :: NVIDIA CUDA :: 2.3":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 2.3"
+    "GPU :: NVIDIA CUDA :: 3.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 3.0"
+    "GPU :: NVIDIA CUDA :: 3.1":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 3.1"
+    "GPU :: NVIDIA CUDA :: 3.2":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 3.2"
+    "GPU :: NVIDIA CUDA :: 4.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 4.0"
+    "GPU :: NVIDIA CUDA :: 4.1":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 4.1"
+    "GPU :: NVIDIA CUDA :: 4.2":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 4.2"
+    "GPU :: NVIDIA CUDA :: 5.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 5.0"
+    "GPU :: NVIDIA CUDA :: 5.5":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 5.5"
+    "GPU :: NVIDIA CUDA :: 6.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 6.0"
+    "GPU :: NVIDIA CUDA :: 6.5":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 6.5"
+    "GPU :: NVIDIA CUDA :: 7.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 7.0"
+    "GPU :: NVIDIA CUDA :: 7.5":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 7.5"
+    "GPU :: NVIDIA CUDA :: 8.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 8.0"
+    "GPU :: NVIDIA CUDA :: 9.0":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 9.0"
+    "GPU :: NVIDIA CUDA :: 9.1":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 9.1"
+    "GPU :: NVIDIA CUDA :: 9.2":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 9.2"
+    "Handhelds/PDA&#39;s":
+      value: "Environment :: Handhelds/PDA&#39;s"
+    "MacOS X":
+      value: "Environment :: MacOS X"
+    "MacOS X :: Aqua":
+      value: "Environment :: MacOS X :: Aqua"
+    "MacOS X :: Carbon":
+      value: "Environment :: MacOS X :: Carbon"
+    "MacOS X :: Cocoa":
+      value: "Environment :: MacOS X :: Cocoa"
+    "No Input/Output (Daemon)":
+      value: "Environment :: No Input/Output (Daemon)"
+    "OpenStack":
+      value: "Environment :: OpenStack"
+    "Other Environment":
+      value: "Environment :: Other Environment"
+    "Plugins":
+      value: "Environment :: Plugins"
+    "WebAssembly":
+      value: "Environment :: WebAssembly"
+    "WebAssembly :: Emscripten":
+      value: "Environment :: WebAssembly :: Emscripten"
+    "WebAssembly :: WASI":
+      value: "Environment :: WebAssembly :: WASI"
+    "Web Environment":
+      value: "Environment :: Web Environment"
+    "Web Environment :: Buffet":
+      value: "Environment :: Web Environment :: Buffet"
+    "Web Environment :: Mozilla":
+      value: "Environment :: Web Environment :: Mozilla"
+    "Web Environment :: ToscaWidgets":
+      value: "Environment :: Web Environment :: ToscaWidgets"
+    "Win32 (MS Windows)":
+      value: "Environment :: Win32 (MS Windows)"
+    "X11 Applications":
+      value: "Environment :: X11 Applications"
+    "X11 Applications :: Gnome":
+      value: "Environment :: X11 Applications :: Gnome"
+    "X11 Applications :: GTK":
+      value: "Environment :: X11 Applications :: GTK"
+    "X11 Applications :: KDE":
+      value: "Environment :: X11 Applications :: KDE"
+    "X11 Applications :: Qt":
+      value: "Environment :: X11 Applications :: Qt"

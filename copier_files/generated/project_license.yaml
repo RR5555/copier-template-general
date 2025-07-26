@@ -1,0 +1,174 @@
+project_license:
+  type: str
+  help: What is the project project license?
+  multichoice: true
+  choices:
+
+    "Aladdin Free Public License (AFPL)":
+      value: "License :: Aladdin Free Public License (AFPL)"
+    "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication":
+      value: "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
+    "CeCILL-B Free Software License Agreement (CECILL-B)":
+      value: "License :: CeCILL-B Free Software License Agreement (CECILL-B)"
+    "CeCILL-C Free Software License Agreement (CECILL-C)":
+      value: "License :: CeCILL-C Free Software License Agreement (CECILL-C)"
+    "DFSG approved":
+      value: "License :: DFSG approved"
+    "Eiffel Forum License (EFL)":
+      value: "License :: Eiffel Forum License (EFL)"
+    "Free For Educational Use":
+      value: "License :: Free For Educational Use"
+    "Free For Home Use":
+      value: "License :: Free For Home Use"
+    "Free for non-commercial use":
+      value: "License :: Free for non-commercial use"
+    "Freely Distributable":
+      value: "License :: Freely Distributable"
+    "Free To Use But Restricted":
+      value: "License :: Free To Use But Restricted"
+    "Freeware":
+      value: "License :: Freeware"
+    "GUST Font License 1.0":
+      value: "License :: GUST Font License 1.0"
+    "GUST Font License 2006-09-30":
+      value: "License :: GUST Font License 2006-09-30"
+    "Netscape Public License (NPL)":
+      value: "License :: Netscape Public License (NPL)"
+    "Nokia Open Source License (NOKOS)":
+      value: "License :: Nokia Open Source License (NOKOS)"
+    "OSI Approved":
+      value: "License :: OSI Approved"
+    "OSI Approved :: Academic Free License (AFL)":
+      value: "License :: OSI Approved :: Academic Free License (AFL)"
+    "OSI Approved :: Apache Software License":
+      value: "License :: OSI Approved :: Apache Software License"
+    "OSI Approved :: Apple Public Source License":
+      value: "License :: OSI Approved :: Apple Public Source License"
+    "OSI Approved :: Artistic License":
+      value: "License :: OSI Approved :: Artistic License"
+    "OSI Approved :: Attribution Assurance License":
+      value: "License :: OSI Approved :: Attribution Assurance License"
+    "OSI Approved :: Blue Oak Model License (BlueOak-1.0.0)":
+      value: "License :: OSI Approved :: Blue Oak Model License (BlueOak-1.0.0)"
+    "OSI Approved :: Boost Software License 1.0 (BSL-1.0)":
+      value: "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)"
+    "OSI Approved :: BSD License":
+      value: "License :: OSI Approved :: BSD License"
+    "OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)":
+      value: "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)"
+    "OSI Approved :: CMU License (MIT-CMU)":
+      value: "License :: OSI Approved :: CMU License (MIT-CMU)"
+    "OSI Approved :: Common Development and Distribution License 1.0 (CDDL-1.0)":
+      value: "License :: OSI Approved :: Common Development and Distribution License 1.0 (CDDL-1.0)"
+    "OSI Approved :: Common Public License":
+      value: "License :: OSI Approved :: Common Public License"
+    "OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)":
+      value: "License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)"
+    "OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)":
+      value: "License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)"
+    "OSI Approved :: Educational Community License, Version 2.0 (ECL-2.0)":
+      value: "License :: OSI Approved :: Educational Community License, Version 2.0 (ECL-2.0)"
+    "OSI Approved :: Eiffel Forum License":
+      value: "License :: OSI Approved :: Eiffel Forum License"
+    "OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)":
+      value: "License :: OSI Approved :: European Union Public Licence 1.0 (EUPL 1.0)"
+    "OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)":
+      value: "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
+    "OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)":
+      value: "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)"
+    "OSI Approved :: GNU Affero General Public License v3":
+      value: "License :: OSI Approved :: GNU Affero General Public License v3"
+    "OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)":
+      value: "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)"
+    "OSI Approved :: GNU Free Documentation License (FDL)":
+      value: "License :: OSI Approved :: GNU Free Documentation License (FDL)"
+    "OSI Approved :: GNU General Public License (GPL)":
+      value: "License :: OSI Approved :: GNU General Public License (GPL)"
+    "OSI Approved :: GNU General Public License v2 (GPLv2)":
+      value: "License :: OSI Approved :: GNU General Public License v2 (GPLv2)"
+    "OSI Approved :: GNU General Public License v2 or later (GPLv2+)":
+      value: "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)"
+    "OSI Approved :: GNU General Public License v3 (GPLv3)":
+      value: "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+    "OSI Approved :: GNU General Public License v3 or later (GPLv3+)":
+      value: "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+    "OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)":
+      value: "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)"
+    "OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)":
+      value: "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)"
+    "OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)":
+      value: "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)"
+    "OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)":
+      value: "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)"
+    "OSI Approved :: GNU Library or Lesser General Public License (LGPL)":
+      value: "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)"
+    "OSI Approved :: Historical Permission Notice and Disclaimer (HPND)":
+      value: "License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND)"
+    "OSI Approved :: IBM Public License":
+      value: "License :: OSI Approved :: IBM Public License"
+    "OSI Approved :: ISC License (ISCL)":
+      value: "License :: OSI Approved :: ISC License (ISCL)"
+    "OSI Approved :: MirOS License (MirOS)":
+      value: "License :: OSI Approved :: MirOS License (MirOS)"
+    "OSI Approved :: MIT License":
+      value: "License :: OSI Approved :: MIT License"
+    "OSI Approved :: MIT No Attribution License (MIT-0)":
+      value: "License :: OSI Approved :: MIT No Attribution License (MIT-0)"
+    "OSI Approved :: Motosoto License":
+      value: "License :: OSI Approved :: Motosoto License"
+    "OSI Approved :: Mozilla Public License 1.0 (MPL)":
+      value: "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)"
+    "OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)":
+      value: "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
+    "OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)":
+      value: "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+    "OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)":
+      value: "License :: OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)"
+    "OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)":
+      value: "License :: OSI Approved :: NASA Open Source Agreement v1.3 (NASA-1.3)"
+    "OSI Approved :: Nethack General Public License":
+      value: "License :: OSI Approved :: Nethack General Public License"
+    "OSI Approved :: Nokia Open Source License":
+      value: "License :: OSI Approved :: Nokia Open Source License"
+    "OSI Approved :: Open Group Test Suite License":
+      value: "License :: OSI Approved :: Open Group Test Suite License"
+    "OSI Approved :: Open Software License 3.0 (OSL-3.0)":
+      value: "License :: OSI Approved :: Open Software License 3.0 (OSL-3.0)"
+    "OSI Approved :: PostgreSQL License":
+      value: "License :: OSI Approved :: PostgreSQL License"
+    "OSI Approved :: Python License (CNRI Python License)":
+      value: "License :: OSI Approved :: Python License (CNRI Python License)"
+    "OSI Approved :: Python Software Foundation License":
+      value: "License :: OSI Approved :: Python Software Foundation License"
+    "OSI Approved :: Qt Public License (QPL)":
+      value: "License :: OSI Approved :: Qt Public License (QPL)"
+    "OSI Approved :: Ricoh Source Code Public License":
+      value: "License :: OSI Approved :: Ricoh Source Code Public License"
+    "OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)":
+      value: "License :: OSI Approved :: SIL Open Font License 1.1 (OFL-1.1)"
+    "OSI Approved :: Sleepycat License":
+      value: "License :: OSI Approved :: Sleepycat License"
+    "OSI Approved :: Sun Public License":
+      value: "License :: OSI Approved :: Sun Public License"
+    "OSI Approved :: The Unlicense (Unlicense)":
+      value: "License :: OSI Approved :: The Unlicense (Unlicense)"
+    "OSI Approved :: Universal Permissive License (UPL)":
+      value: "License :: OSI Approved :: Universal Permissive License (UPL)"
+    "OSI Approved :: University of Illinois/NCSA Open Source License":
+      value: "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
+    "OSI Approved :: Vovida Software License 1.0":
+      value: "License :: OSI Approved :: Vovida Software License 1.0"
+    "OSI Approved :: W3C License":
+      value: "License :: OSI Approved :: W3C License"
+    "OSI Approved :: Zero-Clause BSD (0BSD)":
+      value: "License :: OSI Approved :: Zero-Clause BSD (0BSD)"
+    "OSI Approved :: zlib/libpng License":
+      value: "License :: OSI Approved :: zlib/libpng License"
+    "OSI Approved :: Zope Public License":
+      value: "License :: OSI Approved :: Zope Public License"
+    "Other/Proprietary License":
+      value: "License :: Other/Proprietary License"
+    "Public Domain":
+      value: "License :: Public Domain"
+    "Repoze Public License":
+      value: "License :: Repoze Public License"

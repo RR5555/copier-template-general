@@ -1,0 +1,350 @@
+project_framework:
+  type: str
+  help: What is the project project framework?
+  multichoice: true
+  choices:
+
+    "AiiDA":
+      value: "Framework :: AiiDA"
+    "aiohttp":
+      value: "Framework :: aiohttp"
+    "Ansible":
+      value: "Framework :: Ansible"
+    "AnyIO":
+      value: "Framework :: AnyIO"
+    "Apache Airflow":
+      value: "Framework :: Apache Airflow"
+    "Apache Airflow :: Provider":
+      value: "Framework :: Apache Airflow :: Provider"
+    "AsyncIO":
+      value: "Framework :: AsyncIO"
+    "AWS CDK":
+      value: "Framework :: AWS CDK"
+    "AWS CDK :: 1":
+      value: "Framework :: AWS CDK :: 1"
+    "AWS CDK :: 2":
+      value: "Framework :: AWS CDK :: 2"
+    "BEAT":
+      value: "Framework :: BEAT"
+    "BFG":
+      value: "Framework :: BFG"
+    "Bob":
+      value: "Framework :: Bob"
+    "Bottle":
+      value: "Framework :: Bottle"
+    "Buildout":
+      value: "Framework :: Buildout"
+    "Buildout :: Extension":
+      value: "Framework :: Buildout :: Extension"
+    "Buildout :: Recipe":
+      value: "Framework :: Buildout :: Recipe"
+    "CastleCMS":
+      value: "Framework :: CastleCMS"
+    "CastleCMS :: Theme":
+      value: "Framework :: CastleCMS :: Theme"
+    "Celery":
+      value: "Framework :: Celery"
+    "Chandler":
+      value: "Framework :: Chandler"
+    "CherryPy":
+      value: "Framework :: CherryPy"
+    "cocotb":
+      value: "Framework :: cocotb"
+    "CubicWeb":
+      value: "Framework :: CubicWeb"
+    "Dash":
+      value: "Framework :: Dash"
+    "Datasette":
+      value: "Framework :: Datasette"
+    "Django":
+      value: "Framework :: Django"
+    "Django :: 1":
+      value: "Framework :: Django :: 1"
+    "Django :: 1.10":
+      value: "Framework :: Django :: 1.10"
+    "Django :: 1.11":
+      value: "Framework :: Django :: 1.11"
+    "Django :: 1.4":
+      value: "Framework :: Django :: 1.4"
+    "Django :: 1.5":
+      value: "Framework :: Django :: 1.5"
+    "Django :: 1.6":
+      value: "Framework :: Django :: 1.6"
+    "Django :: 1.7":
+      value: "Framework :: Django :: 1.7"
+    "Django :: 1.8":
+      value: "Framework :: Django :: 1.8"
+    "Django :: 1.9":
+      value: "Framework :: Django :: 1.9"
+    "Django :: 2":
+      value: "Framework :: Django :: 2"
+    "Django :: 2.0":
+      value: "Framework :: Django :: 2.0"
+    "Django :: 2.1":
+      value: "Framework :: Django :: 2.1"
+    "Django :: 2.2":
+      value: "Framework :: Django :: 2.2"
+    "Django :: 3":
+      value: "Framework :: Django :: 3"
+    "Django :: 3.0":
+      value: "Framework :: Django :: 3.0"
+    "Django :: 3.1":
+      value: "Framework :: Django :: 3.1"
+    "Django :: 3.2":
+      value: "Framework :: Django :: 3.2"
+    "Django :: 4":
+      value: "Framework :: Django :: 4"
+    "Django :: 4.0":
+      value: "Framework :: Django :: 4.0"
+    "Django :: 4.1":
+      value: "Framework :: Django :: 4.1"
+    "Django :: 4.2":
+      value: "Framework :: Django :: 4.2"
+    "Django :: 5":
+      value: "Framework :: Django :: 5"
+    "Django :: 5.0":
+      value: "Framework :: Django :: 5.0"
+    "Django :: 5.1":
+      value: "Framework :: Django :: 5.1"
+    "Django :: 5.2":
+      value: "Framework :: Django :: 5.2"
+    "Django CMS":
+      value: "Framework :: Django CMS"
+    "Django CMS :: 3.10":
+      value: "Framework :: Django CMS :: 3.10"
+    "Django CMS :: 3.11":
+      value: "Framework :: Django CMS :: 3.11"
+    "Django CMS :: 3.4":
+      value: "Framework :: Django CMS :: 3.4"
+    "Django CMS :: 3.5":
+      value: "Framework :: Django CMS :: 3.5"
+    "Django CMS :: 3.6":
+      value: "Framework :: Django CMS :: 3.6"
+    "Django CMS :: 3.7":
+      value: "Framework :: Django CMS :: 3.7"
+    "Django CMS :: 3.8":
+      value: "Framework :: Django CMS :: 3.8"
+    "Django CMS :: 3.9":
+      value: "Framework :: Django CMS :: 3.9"
+    "Django CMS :: 4.0":
+      value: "Framework :: Django CMS :: 4.0"
+    "Django CMS :: 4.1":
+      value: "Framework :: Django CMS :: 4.1"
+    "Django CMS :: 5.0":
+      value: "Framework :: Django CMS :: 5.0"
+    "FastAPI":
+      value: "Framework :: FastAPI"
+    "Flake8":
+      value: "Framework :: Flake8"
+    "Flask":
+      value: "Framework :: Flask"
+    "Hatch":
+      value: "Framework :: Hatch"
+    "Hypothesis":
+      value: "Framework :: Hypothesis"
+    "IDLE":
+      value: "Framework :: IDLE"
+    "IPython":
+      value: "Framework :: IPython"
+    "Jupyter":
+      value: "Framework :: Jupyter"
+    "Jupyter :: JupyterLab":
+      value: "Framework :: Jupyter :: JupyterLab"
+    "Jupyter :: JupyterLab :: 1":
+      value: "Framework :: Jupyter :: JupyterLab :: 1"
+    "Jupyter :: JupyterLab :: 2":
+      value: "Framework :: Jupyter :: JupyterLab :: 2"
+    "Jupyter :: JupyterLab :: 3":
+      value: "Framework :: Jupyter :: JupyterLab :: 3"
+    "Jupyter :: JupyterLab :: 4":
+      value: "Framework :: Jupyter :: JupyterLab :: 4"
+    "Jupyter :: JupyterLab :: Extensions":
+      value: "Framework :: Jupyter :: JupyterLab :: Extensions"
+    "Jupyter :: JupyterLab :: Extensions :: Mime Renderers":
+      value: "Framework :: Jupyter :: JupyterLab :: Extensions :: Mime Renderers"
+    "Jupyter :: JupyterLab :: Extensions :: Prebuilt":
+      value: "Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt"
+    "Jupyter :: JupyterLab :: Extensions :: Themes":
+      value: "Framework :: Jupyter :: JupyterLab :: Extensions :: Themes"
+    "Kedro":
+      value: "Framework :: Kedro"
+    "Lektor":
+      value: "Framework :: Lektor"
+    "Masonite":
+      value: "Framework :: Masonite"
+    "Matplotlib":
+      value: "Framework :: Matplotlib"
+    "MkDocs":
+      value: "Framework :: MkDocs"
+    "napari":
+      value: "Framework :: napari"
+    "Nengo":
+      value: "Framework :: Nengo"
+    "Odoo":
+      value: "Framework :: Odoo"
+    "Odoo :: 10.0":
+      value: "Framework :: Odoo :: 10.0"
+    "Odoo :: 11.0":
+      value: "Framework :: Odoo :: 11.0"
+    "Odoo :: 12.0":
+      value: "Framework :: Odoo :: 12.0"
+    "Odoo :: 13.0":
+      value: "Framework :: Odoo :: 13.0"
+    "Odoo :: 14.0":
+      value: "Framework :: Odoo :: 14.0"
+    "Odoo :: 15.0":
+      value: "Framework :: Odoo :: 15.0"
+    "Odoo :: 16.0":
+      value: "Framework :: Odoo :: 16.0"
+    "Odoo :: 17.0":
+      value: "Framework :: Odoo :: 17.0"
+    "Odoo :: 18.0":
+      value: "Framework :: Odoo :: 18.0"
+    "Odoo :: 8.0":
+      value: "Framework :: Odoo :: 8.0"
+    "Odoo :: 9.0":
+      value: "Framework :: Odoo :: 9.0"
+    "OpenTelemetry":
+      value: "Framework :: OpenTelemetry"
+    "OpenTelemetry :: Distros":
+      value: "Framework :: OpenTelemetry :: Distros"
+    "OpenTelemetry :: Exporters":
+      value: "Framework :: OpenTelemetry :: Exporters"
+    "OpenTelemetry :: Instrumentations":
+      value: "Framework :: OpenTelemetry :: Instrumentations"
+    "Opps":
+      value: "Framework :: Opps"
+    "Paste":
+      value: "Framework :: Paste"
+    "Pelican":
+      value: "Framework :: Pelican"
+    "Pelican :: Plugins":
+      value: "Framework :: Pelican :: Plugins"
+    "Pelican :: Themes":
+      value: "Framework :: Pelican :: Themes"
+    "Plone":
+      value: "Framework :: Plone"
+    "Plone :: 3.2":
+      value: "Framework :: Plone :: 3.2"
+    "Plone :: 3.3":
+      value: "Framework :: Plone :: 3.3"
+    "Plone :: 4.0":
+      value: "Framework :: Plone :: 4.0"
+    "Plone :: 4.1":
+      value: "Framework :: Plone :: 4.1"
+    "Plone :: 4.2":
+      value: "Framework :: Plone :: 4.2"
+    "Plone :: 4.3":
+      value: "Framework :: Plone :: 4.3"
+    "Plone :: 5.0":
+      value: "Framework :: Plone :: 5.0"
+    "Plone :: 5.1":
+      value: "Framework :: Plone :: 5.1"
+    "Plone :: 5.2":
+      value: "Framework :: Plone :: 5.2"
+    "Plone :: 5.3":
+      value: "Framework :: Plone :: 5.3"
+    "Plone :: 6.0":
+      value: "Framework :: Plone :: 6.0"
+    "Plone :: 6.1":
+      value: "Framework :: Plone :: 6.1"
+    "Plone :: 6.2":
+      value: "Framework :: Plone :: 6.2"
+    "Plone :: Addon":
+      value: "Framework :: Plone :: Addon"
+    "Plone :: Core":
+      value: "Framework :: Plone :: Core"
+    "Plone :: Distribution":
+      value: "Framework :: Plone :: Distribution"
+    "Plone :: Theme":
+      value: "Framework :: Plone :: Theme"
+    "Pycsou":
+      value: "Framework :: Pycsou"
+    "Pydantic":
+      value: "Framework :: Pydantic"
+    "Pydantic :: 1":
+      value: "Framework :: Pydantic :: 1"
+    "Pydantic :: 2":
+      value: "Framework :: Pydantic :: 2"
+    "Pylons":
+      value: "Framework :: Pylons"
+    "Pyodide":
+      value: "Framework :: Pyodide"
+    "Pyramid":
+      value: "Framework :: Pyramid"
+    "PySimpleGUI":
+      value: "Framework :: PySimpleGUI"
+    "PySimpleGUI :: 4":
+      value: "Framework :: PySimpleGUI :: 4"
+    "PySimpleGUI :: 5":
+      value: "Framework :: PySimpleGUI :: 5"
+    "Pytest":
+      value: "Framework :: Pytest"
+    "Review Board":
+      value: "Framework :: Review Board"
+    "Robot Framework":
+      value: "Framework :: Robot Framework"
+    "Robot Framework :: Library":
+      value: "Framework :: Robot Framework :: Library"
+    "Robot Framework :: Tool":
+      value: "Framework :: Robot Framework :: Tool"
+    "Scrapy":
+      value: "Framework :: Scrapy"
+    "Setuptools Plugin":
+      value: "Framework :: Setuptools Plugin"
+    "Sphinx":
+      value: "Framework :: Sphinx"
+    "Sphinx :: Domain":
+      value: "Framework :: Sphinx :: Domain"
+    "Sphinx :: Extension":
+      value: "Framework :: Sphinx :: Extension"
+    "Sphinx :: Theme":
+      value: "Framework :: Sphinx :: Theme"
+    "tox":
+      value: "Framework :: tox"
+    "Trac":
+      value: "Framework :: Trac"
+    "Trio":
+      value: "Framework :: Trio"
+    "Tryton":
+      value: "Framework :: Tryton"
+    "TurboGears":
+      value: "Framework :: TurboGears"
+    "TurboGears :: Applications":
+      value: "Framework :: TurboGears :: Applications"
+    "TurboGears :: Widgets":
+      value: "Framework :: TurboGears :: Widgets"
+    "Twisted":
+      value: "Framework :: Twisted"
+    "Wagtail":
+      value: "Framework :: Wagtail"
+    "Wagtail :: 1":
+      value: "Framework :: Wagtail :: 1"
+    "Wagtail :: 2":
+      value: "Framework :: Wagtail :: 2"
+    "Wagtail :: 3":
+      value: "Framework :: Wagtail :: 3"
+    "Wagtail :: 4":
+      value: "Framework :: Wagtail :: 4"
+    "Wagtail :: 5":
+      value: "Framework :: Wagtail :: 5"
+    "Wagtail :: 6":
+      value: "Framework :: Wagtail :: 6"
+    "Wagtail :: 7":
+      value: "Framework :: Wagtail :: 7"
+    "ZODB":
+      value: "Framework :: ZODB"
+    "Zope":
+      value: "Framework :: Zope"
+    "Zope :: 2":
+      value: "Framework :: Zope :: 2"
+    "Zope2":
+      value: "Framework :: Zope2"
+    "Zope :: 3":
+      value: "Framework :: Zope :: 3"
+    "Zope3":
+      value: "Framework :: Zope3"
+    "Zope :: 4":
+      value: "Framework :: Zope :: 4"
+    "Zope :: 5":
+      value: "Framework :: Zope :: 5"

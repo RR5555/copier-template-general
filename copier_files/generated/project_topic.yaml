@@ -1,0 +1,642 @@
+project_topic:
+  type: str
+  help: What is the project project topic?
+  multichoice: true
+  choices:
+
+    "Adaptive Technologies":
+      value: "Topic :: Adaptive Technologies"
+    "Artistic Software":
+      value: "Topic :: Artistic Software"
+    "Communications":
+      value: "Topic :: Communications"
+    "Communications :: BBS":
+      value: "Topic :: Communications :: BBS"
+    "Communications :: Chat":
+      value: "Topic :: Communications :: Chat"
+    "Communications :: Chat :: ICQ":
+      value: "Topic :: Communications :: Chat :: ICQ"
+    "Communications :: Chat :: Internet Relay Chat":
+      value: "Topic :: Communications :: Chat :: Internet Relay Chat"
+    "Communications :: Chat :: Unix Talk":
+      value: "Topic :: Communications :: Chat :: Unix Talk"
+    "Communications :: Conferencing":
+      value: "Topic :: Communications :: Conferencing"
+    "Communications :: Email":
+      value: "Topic :: Communications :: Email"
+    "Communications :: Email :: Address Book":
+      value: "Topic :: Communications :: Email :: Address Book"
+    "Communications :: Email :: Email Clients (MUA)":
+      value: "Topic :: Communications :: Email :: Email Clients (MUA)"
+    "Communications :: Email :: Filters":
+      value: "Topic :: Communications :: Email :: Filters"
+    "Communications :: Email :: Mailing List Servers":
+      value: "Topic :: Communications :: Email :: Mailing List Servers"
+    "Communications :: Email :: Mail Transport Agents":
+      value: "Topic :: Communications :: Email :: Mail Transport Agents"
+    "Communications :: Email :: Post-Office":
+      value: "Topic :: Communications :: Email :: Post-Office"
+    "Communications :: Email :: Post-Office :: IMAP":
+      value: "Topic :: Communications :: Email :: Post-Office :: IMAP"
+    "Communications :: Email :: Post-Office :: POP3":
+      value: "Topic :: Communications :: Email :: Post-Office :: POP3"
+    "Communications :: Fax":
+      value: "Topic :: Communications :: Fax"
+    "Communications :: FIDO":
+      value: "Topic :: Communications :: FIDO"
+    "Communications :: File Sharing":
+      value: "Topic :: Communications :: File Sharing"
+    "Communications :: File Sharing :: Gnutella":
+      value: "Topic :: Communications :: File Sharing :: Gnutella"
+    "Communications :: File Sharing :: Napster":
+      value: "Topic :: Communications :: File Sharing :: Napster"
+    "Communications :: Ham Radio":
+      value: "Topic :: Communications :: Ham Radio"
+    "Communications :: Internet Phone":
+      value: "Topic :: Communications :: Internet Phone"
+    "Communications :: Telephony":
+      value: "Topic :: Communications :: Telephony"
+    "Communications :: Usenet News":
+      value: "Topic :: Communications :: Usenet News"
+    "Database":
+      value: "Topic :: Database"
+    "Database :: Database Engines/Servers":
+      value: "Topic :: Database :: Database Engines/Servers"
+    "Database :: Front-Ends":
+      value: "Topic :: Database :: Front-Ends"
+    "Desktop Environment":
+      value: "Topic :: Desktop Environment"
+    "Desktop Environment :: File Managers":
+      value: "Topic :: Desktop Environment :: File Managers"
+    "Desktop Environment :: Gnome":
+      value: "Topic :: Desktop Environment :: Gnome"
+    "Desktop Environment :: GNUstep":
+      value: "Topic :: Desktop Environment :: GNUstep"
+    "Desktop Environment :: K Desktop Environment (KDE)":
+      value: "Topic :: Desktop Environment :: K Desktop Environment (KDE)"
+    "Desktop Environment :: K Desktop Environment (KDE) :: Themes":
+      value: "Topic :: Desktop Environment :: K Desktop Environment (KDE) :: Themes"
+    "Desktop Environment :: PicoGUI":
+      value: "Topic :: Desktop Environment :: PicoGUI"
+    "Desktop Environment :: PicoGUI :: Applications":
+      value: "Topic :: Desktop Environment :: PicoGUI :: Applications"
+    "Desktop Environment :: PicoGUI :: Themes":
+      value: "Topic :: Desktop Environment :: PicoGUI :: Themes"
+    "Desktop Environment :: Screen Savers":
+      value: "Topic :: Desktop Environment :: Screen Savers"
+    "Desktop Environment :: Window Managers":
+      value: "Topic :: Desktop Environment :: Window Managers"
+    "Desktop Environment :: Window Managers :: Afterstep":
+      value: "Topic :: Desktop Environment :: Window Managers :: Afterstep"
+    "Desktop Environment :: Window Managers :: Afterstep :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: Afterstep :: Themes"
+    "Desktop Environment :: Window Managers :: Applets":
+      value: "Topic :: Desktop Environment :: Window Managers :: Applets"
+    "Desktop Environment :: Window Managers :: Blackbox":
+      value: "Topic :: Desktop Environment :: Window Managers :: Blackbox"
+    "Desktop Environment :: Window Managers :: Blackbox :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: Blackbox :: Themes"
+    "Desktop Environment :: Window Managers :: CTWM":
+      value: "Topic :: Desktop Environment :: Window Managers :: CTWM"
+    "Desktop Environment :: Window Managers :: CTWM :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: CTWM :: Themes"
+    "Desktop Environment :: Window Managers :: Enlightenment":
+      value: "Topic :: Desktop Environment :: Window Managers :: Enlightenment"
+    "Desktop Environment :: Window Managers :: Enlightenment :: Epplets":
+      value: "Topic :: Desktop Environment :: Window Managers :: Enlightenment :: Epplets"
+    "Desktop Environment :: Window Managers :: Enlightenment :: Themes DR15":
+      value: "Topic :: Desktop Environment :: Window Managers :: Enlightenment :: Themes DR15"
+    "Desktop Environment :: Window Managers :: Enlightenment :: Themes DR16":
+      value: "Topic :: Desktop Environment :: Window Managers :: Enlightenment :: Themes DR16"
+    "Desktop Environment :: Window Managers :: Enlightenment :: Themes DR17":
+      value: "Topic :: Desktop Environment :: Window Managers :: Enlightenment :: Themes DR17"
+    "Desktop Environment :: Window Managers :: Fluxbox":
+      value: "Topic :: Desktop Environment :: Window Managers :: Fluxbox"
+    "Desktop Environment :: Window Managers :: Fluxbox :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: Fluxbox :: Themes"
+    "Desktop Environment :: Window Managers :: FVWM":
+      value: "Topic :: Desktop Environment :: Window Managers :: FVWM"
+    "Desktop Environment :: Window Managers :: FVWM :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: FVWM :: Themes"
+    "Desktop Environment :: Window Managers :: IceWM":
+      value: "Topic :: Desktop Environment :: Window Managers :: IceWM"
+    "Desktop Environment :: Window Managers :: IceWM :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: IceWM :: Themes"
+    "Desktop Environment :: Window Managers :: MetaCity":
+      value: "Topic :: Desktop Environment :: Window Managers :: MetaCity"
+    "Desktop Environment :: Window Managers :: MetaCity :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: MetaCity :: Themes"
+    "Desktop Environment :: Window Managers :: Oroborus":
+      value: "Topic :: Desktop Environment :: Window Managers :: Oroborus"
+    "Desktop Environment :: Window Managers :: Oroborus :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: Oroborus :: Themes"
+    "Desktop Environment :: Window Managers :: Sawfish":
+      value: "Topic :: Desktop Environment :: Window Managers :: Sawfish"
+    "Desktop Environment :: Window Managers :: Sawfish :: Themes 0.30":
+      value: "Topic :: Desktop Environment :: Window Managers :: Sawfish :: Themes 0.30"
+    "Desktop Environment :: Window Managers :: Sawfish :: Themes pre-0.30":
+      value: "Topic :: Desktop Environment :: Window Managers :: Sawfish :: Themes pre-0.30"
+    "Desktop Environment :: Window Managers :: Waimea":
+      value: "Topic :: Desktop Environment :: Window Managers :: Waimea"
+    "Desktop Environment :: Window Managers :: Waimea :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: Waimea :: Themes"
+    "Desktop Environment :: Window Managers :: Window Maker":
+      value: "Topic :: Desktop Environment :: Window Managers :: Window Maker"
+    "Desktop Environment :: Window Managers :: Window Maker :: Applets":
+      value: "Topic :: Desktop Environment :: Window Managers :: Window Maker :: Applets"
+    "Desktop Environment :: Window Managers :: Window Maker :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: Window Maker :: Themes"
+    "Desktop Environment :: Window Managers :: XFCE":
+      value: "Topic :: Desktop Environment :: Window Managers :: XFCE"
+    "Desktop Environment :: Window Managers :: XFCE :: Themes":
+      value: "Topic :: Desktop Environment :: Window Managers :: XFCE :: Themes"
+    "Documentation":
+      value: "Topic :: Documentation"
+    "Documentation :: Sphinx":
+      value: "Topic :: Documentation :: Sphinx"
+    "Education":
+      value: "Topic :: Education"
+    "Education :: Computer Aided Instruction (CAI)":
+      value: "Topic :: Education :: Computer Aided Instruction (CAI)"
+    "Education :: Testing":
+      value: "Topic :: Education :: Testing"
+    "File Formats":
+      value: "Topic :: File Formats"
+    "File Formats :: JSON":
+      value: "Topic :: File Formats :: JSON"
+    "File Formats :: JSON :: JSON Schema":
+      value: "Topic :: File Formats :: JSON :: JSON Schema"
+    "Games/Entertainment":
+      value: "Topic :: Games/Entertainment"
+    "Games/Entertainment :: Arcade":
+      value: "Topic :: Games/Entertainment :: Arcade"
+    "Games/Entertainment :: Board Games":
+      value: "Topic :: Games/Entertainment :: Board Games"
+    "Games/Entertainment :: First Person Shooters":
+      value: "Topic :: Games/Entertainment :: First Person Shooters"
+    "Games/Entertainment :: Fortune Cookies":
+      value: "Topic :: Games/Entertainment :: Fortune Cookies"
+    "Games/Entertainment :: Multi-User Dungeons (MUD)":
+      value: "Topic :: Games/Entertainment :: Multi-User Dungeons (MUD)"
+    "Games/Entertainment :: Puzzle Games":
+      value: "Topic :: Games/Entertainment :: Puzzle Games"
+    "Games/Entertainment :: Real Time Strategy":
+      value: "Topic :: Games/Entertainment :: Real Time Strategy"
+    "Games/Entertainment :: Role-Playing":
+      value: "Topic :: Games/Entertainment :: Role-Playing"
+    "Games/Entertainment :: Side-Scrolling/Arcade Games":
+      value: "Topic :: Games/Entertainment :: Side-Scrolling/Arcade Games"
+    "Games/Entertainment :: Simulation":
+      value: "Topic :: Games/Entertainment :: Simulation"
+    "Games/Entertainment :: Turn Based Strategy":
+      value: "Topic :: Games/Entertainment :: Turn Based Strategy"
+    "Home Automation":
+      value: "Topic :: Home Automation"
+    "Internet":
+      value: "Topic :: Internet"
+    "Internet :: File Transfer Protocol (FTP)":
+      value: "Topic :: Internet :: File Transfer Protocol (FTP)"
+    "Internet :: Finger":
+      value: "Topic :: Internet :: Finger"
+    "Internet :: Log Analysis":
+      value: "Topic :: Internet :: Log Analysis"
+    "Internet :: Name Service (DNS)":
+      value: "Topic :: Internet :: Name Service (DNS)"
+    "Internet :: Proxy Servers":
+      value: "Topic :: Internet :: Proxy Servers"
+    "Internet :: WAP":
+      value: "Topic :: Internet :: WAP"
+    "Internet :: WWW/HTTP":
+      value: "Topic :: Internet :: WWW/HTTP"
+    "Internet :: WWW/HTTP :: Browsers":
+      value: "Topic :: Internet :: WWW/HTTP :: Browsers"
+    "Internet :: WWW/HTTP :: Dynamic Content":
+      value: "Topic :: Internet :: WWW/HTTP :: Dynamic Content"
+    "Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries":
+      value: "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries"
+    "Internet :: WWW/HTTP :: Dynamic Content :: Content Management System":
+      value: "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System"
+    "Internet :: WWW/HTTP :: Dynamic Content :: Message Boards":
+      value: "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Message Boards"
+    "Internet :: WWW/HTTP :: Dynamic Content :: News/Diary":
+      value: "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary"
+    "Internet :: WWW/HTTP :: Dynamic Content :: Page Counters":
+      value: "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Page Counters"
+    "Internet :: WWW/HTTP :: Dynamic Content :: Wiki":
+      value: "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki"
+    "Internet :: WWW/HTTP :: HTTP Servers":
+      value: "Topic :: Internet :: WWW/HTTP :: HTTP Servers"
+    "Internet :: WWW/HTTP :: Indexing/Search":
+      value: "Topic :: Internet :: WWW/HTTP :: Indexing/Search"
+    "Internet :: WWW/HTTP :: Session":
+      value: "Topic :: Internet :: WWW/HTTP :: Session"
+    "Internet :: WWW/HTTP :: Site Management":
+      value: "Topic :: Internet :: WWW/HTTP :: Site Management"
+    "Internet :: WWW/HTTP :: Site Management :: Link Checking":
+      value: "Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking"
+    "Internet :: WWW/HTTP :: WSGI":
+      value: "Topic :: Internet :: WWW/HTTP :: WSGI"
+    "Internet :: WWW/HTTP :: WSGI :: Application":
+      value: "Topic :: Internet :: WWW/HTTP :: WSGI :: Application"
+    "Internet :: WWW/HTTP :: WSGI :: Middleware":
+      value: "Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware"
+    "Internet :: WWW/HTTP :: WSGI :: Server":
+      value: "Topic :: Internet :: WWW/HTTP :: WSGI :: Server"
+    "Internet :: XMPP":
+      value: "Topic :: Internet :: XMPP"
+    "Internet :: Z39.50":
+      value: "Topic :: Internet :: Z39.50"
+    "Multimedia":
+      value: "Topic :: Multimedia"
+    "Multimedia :: Graphics":
+      value: "Topic :: Multimedia :: Graphics"
+    "Multimedia :: Graphics :: 3D Modeling":
+      value: "Topic :: Multimedia :: Graphics :: 3D Modeling"
+    "Multimedia :: Graphics :: 3D Rendering":
+      value: "Topic :: Multimedia :: Graphics :: 3D Rendering"
+    "Multimedia :: Graphics :: Capture":
+      value: "Topic :: Multimedia :: Graphics :: Capture"
+    "Multimedia :: Graphics :: Capture :: Digital Camera":
+      value: "Topic :: Multimedia :: Graphics :: Capture :: Digital Camera"
+    "Multimedia :: Graphics :: Capture :: Scanners":
+      value: "Topic :: Multimedia :: Graphics :: Capture :: Scanners"
+    "Multimedia :: Graphics :: Capture :: Screen Capture":
+      value: "Topic :: Multimedia :: Graphics :: Capture :: Screen Capture"
+    "Multimedia :: Graphics :: Editors":
+      value: "Topic :: Multimedia :: Graphics :: Editors"
+    "Multimedia :: Graphics :: Editors :: Raster-Based":
+      value: "Topic :: Multimedia :: Graphics :: Editors :: Raster-Based"
+    "Multimedia :: Graphics :: Editors :: Vector-Based":
+      value: "Topic :: Multimedia :: Graphics :: Editors :: Vector-Based"
+    "Multimedia :: Graphics :: Graphics Conversion":
+      value: "Topic :: Multimedia :: Graphics :: Graphics Conversion"
+    "Multimedia :: Graphics :: Presentation":
+      value: "Topic :: Multimedia :: Graphics :: Presentation"
+    "Multimedia :: Graphics :: Viewers":
+      value: "Topic :: Multimedia :: Graphics :: Viewers"
+    "Multimedia :: Sound/Audio":
+      value: "Topic :: Multimedia :: Sound/Audio"
+    "Multimedia :: Sound/Audio :: Analysis":
+      value: "Topic :: Multimedia :: Sound/Audio :: Analysis"
+    "Multimedia :: Sound/Audio :: Capture/Recording":
+      value: "Topic :: Multimedia :: Sound/Audio :: Capture/Recording"
+    "Multimedia :: Sound/Audio :: CD Audio":
+      value: "Topic :: Multimedia :: Sound/Audio :: CD Audio"
+    "Multimedia :: Sound/Audio :: CD Audio :: CD Playing":
+      value: "Topic :: Multimedia :: Sound/Audio :: CD Audio :: CD Playing"
+    "Multimedia :: Sound/Audio :: CD Audio :: CD Ripping":
+      value: "Topic :: Multimedia :: Sound/Audio :: CD Audio :: CD Ripping"
+    "Multimedia :: Sound/Audio :: CD Audio :: CD Writing":
+      value: "Topic :: Multimedia :: Sound/Audio :: CD Audio :: CD Writing"
+    "Multimedia :: Sound/Audio :: Conversion":
+      value: "Topic :: Multimedia :: Sound/Audio :: Conversion"
+    "Multimedia :: Sound/Audio :: Editors":
+      value: "Topic :: Multimedia :: Sound/Audio :: Editors"
+    "Multimedia :: Sound/Audio :: MIDI":
+      value: "Topic :: Multimedia :: Sound/Audio :: MIDI"
+    "Multimedia :: Sound/Audio :: Mixers":
+      value: "Topic :: Multimedia :: Sound/Audio :: Mixers"
+    "Multimedia :: Sound/Audio :: Players":
+      value: "Topic :: Multimedia :: Sound/Audio :: Players"
+    "Multimedia :: Sound/Audio :: Players :: MP3":
+      value: "Topic :: Multimedia :: Sound/Audio :: Players :: MP3"
+    "Multimedia :: Sound/Audio :: Sound Synthesis":
+      value: "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis"
+    "Multimedia :: Sound/Audio :: Speech":
+      value: "Topic :: Multimedia :: Sound/Audio :: Speech"
+    "Multimedia :: Video":
+      value: "Topic :: Multimedia :: Video"
+    "Multimedia :: Video :: Capture":
+      value: "Topic :: Multimedia :: Video :: Capture"
+    "Multimedia :: Video :: Conversion":
+      value: "Topic :: Multimedia :: Video :: Conversion"
+    "Multimedia :: Video :: Display":
+      value: "Topic :: Multimedia :: Video :: Display"
+    "Multimedia :: Video :: Non-Linear Editor":
+      value: "Topic :: Multimedia :: Video :: Non-Linear Editor"
+    "Office/Business":
+      value: "Topic :: Office/Business"
+    "Office/Business :: Financial":
+      value: "Topic :: Office/Business :: Financial"
+    "Office/Business :: Financial :: Accounting":
+      value: "Topic :: Office/Business :: Financial :: Accounting"
+    "Office/Business :: Financial :: Investment":
+      value: "Topic :: Office/Business :: Financial :: Investment"
+    "Office/Business :: Financial :: Point-Of-Sale":
+      value: "Topic :: Office/Business :: Financial :: Point-Of-Sale"
+    "Office/Business :: Financial :: Spreadsheet":
+      value: "Topic :: Office/Business :: Financial :: Spreadsheet"
+    "Office/Business :: Groupware":
+      value: "Topic :: Office/Business :: Groupware"
+    "Office/Business :: News/Diary":
+      value: "Topic :: Office/Business :: News/Diary"
+    "Office/Business :: Office Suites":
+      value: "Topic :: Office/Business :: Office Suites"
+    "Office/Business :: Scheduling":
+      value: "Topic :: Office/Business :: Scheduling"
+    "Other/Nonlisted Topic":
+      value: "Topic :: Other/Nonlisted Topic"
+    "Printing":
+      value: "Topic :: Printing"
+    "Religion":
+      value: "Topic :: Religion"
+    "Scientific/Engineering":
+      value: "Topic :: Scientific/Engineering"
+    "Scientific/Engineering :: Artificial Intelligence":
+      value: "Topic :: Scientific/Engineering :: Artificial Intelligence"
+    "Scientific/Engineering :: Artificial Life":
+      value: "Topic :: Scientific/Engineering :: Artificial Life"
+    "Scientific/Engineering :: Astronomy":
+      value: "Topic :: Scientific/Engineering :: Astronomy"
+    "Scientific/Engineering :: Atmospheric Science":
+      value: "Topic :: Scientific/Engineering :: Atmospheric Science"
+    "Scientific/Engineering :: Bio-Informatics":
+      value: "Topic :: Scientific/Engineering :: Bio-Informatics"
+    "Scientific/Engineering :: Chemistry":
+      value: "Topic :: Scientific/Engineering :: Chemistry"
+    "Scientific/Engineering :: Electronic Design Automation (EDA)":
+      value: "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)"
+    "Scientific/Engineering :: GIS":
+      value: "Topic :: Scientific/Engineering :: GIS"
+    "Scientific/Engineering :: Human Machine Interfaces":
+      value: "Topic :: Scientific/Engineering :: Human Machine Interfaces"
+    "Scientific/Engineering :: Hydrology":
+      value: "Topic :: Scientific/Engineering :: Hydrology"
+    "Scientific/Engineering :: Image Processing":
+      value: "Topic :: Scientific/Engineering :: Image Processing"
+    "Scientific/Engineering :: Image Recognition":
+      value: "Topic :: Scientific/Engineering :: Image Recognition"
+    "Scientific/Engineering :: Information Analysis":
+      value: "Topic :: Scientific/Engineering :: Information Analysis"
+    "Scientific/Engineering :: Interface Engine/Protocol Translator":
+      value: "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator"
+    "Scientific/Engineering :: Mathematics":
+      value: "Topic :: Scientific/Engineering :: Mathematics"
+    "Scientific/Engineering :: Medical Science Apps.":
+      value: "Topic :: Scientific/Engineering :: Medical Science Apps."
+    "Scientific/Engineering :: Oceanography":
+      value: "Topic :: Scientific/Engineering :: Oceanography"
+    "Scientific/Engineering :: Physics":
+      value: "Topic :: Scientific/Engineering :: Physics"
+    "Scientific/Engineering :: Quantum Computing":
+      value: "Topic :: Scientific/Engineering :: Quantum Computing"
+    "Scientific/Engineering :: Visualization":
+      value: "Topic :: Scientific/Engineering :: Visualization"
+    "Security":
+      value: "Topic :: Security"
+    "Security :: Cryptography":
+      value: "Topic :: Security :: Cryptography"
+    "Sociology":
+      value: "Topic :: Sociology"
+    "Sociology :: Genealogy":
+      value: "Topic :: Sociology :: Genealogy"
+    "Sociology :: History":
+      value: "Topic :: Sociology :: History"
+    "Software Development":
+      value: "Topic :: Software Development"
+    "Software Development :: Assemblers":
+      value: "Topic :: Software Development :: Assemblers"
+    "Software Development :: Bug Tracking":
+      value: "Topic :: Software Development :: Bug Tracking"
+    "Software Development :: Build Tools":
+      value: "Topic :: Software Development :: Build Tools"
+    "Software Development :: Code Generators":
+      value: "Topic :: Software Development :: Code Generators"
+    "Software Development :: Compilers":
+      value: "Topic :: Software Development :: Compilers"
+    "Software Development :: Debuggers":
+      value: "Topic :: Software Development :: Debuggers"
+    "Software Development :: Disassemblers":
+      value: "Topic :: Software Development :: Disassemblers"
+    "Software Development :: Documentation":
+      value: "Topic :: Software Development :: Documentation"
+    "Software Development :: Embedded Systems":
+      value: "Topic :: Software Development :: Embedded Systems"
+    "Software Development :: Embedded Systems :: Controller Area Network (CAN)":
+      value: "Topic :: Software Development :: Embedded Systems :: Controller Area Network (CAN)"
+    "Software Development :: Embedded Systems :: Controller Area Network (CAN) :: CANopen":
+      value: "Topic :: Software Development :: Embedded Systems :: Controller Area Network (CAN) :: CANopen"
+    "Software Development :: Embedded Systems :: Controller Area Network (CAN) :: J1939":
+      value: "Topic :: Software Development :: Embedded Systems :: Controller Area Network (CAN) :: J1939"
+    "Software Development :: Internationalization":
+      value: "Topic :: Software Development :: Internationalization"
+    "Software Development :: Interpreters":
+      value: "Topic :: Software Development :: Interpreters"
+    "Software Development :: Libraries":
+      value: "Topic :: Software Development :: Libraries"
+    "Software Development :: Libraries :: Application Frameworks":
+      value: "Topic :: Software Development :: Libraries :: Application Frameworks"
+    "Software Development :: Libraries :: Java Libraries":
+      value: "Topic :: Software Development :: Libraries :: Java Libraries"
+    "Software Development :: Libraries :: Perl Modules":
+      value: "Topic :: Software Development :: Libraries :: Perl Modules"
+    "Software Development :: Libraries :: PHP Classes":
+      value: "Topic :: Software Development :: Libraries :: PHP Classes"
+    "Software Development :: Libraries :: Pike Modules":
+      value: "Topic :: Software Development :: Libraries :: Pike Modules"
+    "Software Development :: Libraries :: pygame":
+      value: "Topic :: Software Development :: Libraries :: pygame"
+    "Software Development :: Libraries :: Python Modules":
+      value: "Topic :: Software Development :: Libraries :: Python Modules"
+    "Software Development :: Libraries :: Ruby Modules":
+      value: "Topic :: Software Development :: Libraries :: Ruby Modules"
+    "Software Development :: Libraries :: Tcl Extensions":
+      value: "Topic :: Software Development :: Libraries :: Tcl Extensions"
+    "Software Development :: Localization":
+      value: "Topic :: Software Development :: Localization"
+    "Software Development :: Object Brokering":
+      value: "Topic :: Software Development :: Object Brokering"
+    "Software Development :: Object Brokering :: CORBA":
+      value: "Topic :: Software Development :: Object Brokering :: CORBA"
+    "Software Development :: Pre-processors":
+      value: "Topic :: Software Development :: Pre-processors"
+    "Software Development :: Quality Assurance":
+      value: "Topic :: Software Development :: Quality Assurance"
+    "Software Development :: Testing":
+      value: "Topic :: Software Development :: Testing"
+    "Software Development :: Testing :: Acceptance":
+      value: "Topic :: Software Development :: Testing :: Acceptance"
+    "Software Development :: Testing :: BDD":
+      value: "Topic :: Software Development :: Testing :: BDD"
+    "Software Development :: Testing :: Mocking":
+      value: "Topic :: Software Development :: Testing :: Mocking"
+    "Software Development :: Testing :: Traffic Generation":
+      value: "Topic :: Software Development :: Testing :: Traffic Generation"
+    "Software Development :: Testing :: Unit":
+      value: "Topic :: Software Development :: Testing :: Unit"
+    "Software Development :: User Interfaces":
+      value: "Topic :: Software Development :: User Interfaces"
+    "Software Development :: Version Control":
+      value: "Topic :: Software Development :: Version Control"
+    "Software Development :: Version Control :: Bazaar":
+      value: "Topic :: Software Development :: Version Control :: Bazaar"
+    "Software Development :: Version Control :: CVS":
+      value: "Topic :: Software Development :: Version Control :: CVS"
+    "Software Development :: Version Control :: Git":
+      value: "Topic :: Software Development :: Version Control :: Git"
+    "Software Development :: Version Control :: Mercurial":
+      value: "Topic :: Software Development :: Version Control :: Mercurial"
+    "Software Development :: Version Control :: RCS":
+      value: "Topic :: Software Development :: Version Control :: RCS"
+    "Software Development :: Version Control :: SCCS":
+      value: "Topic :: Software Development :: Version Control :: SCCS"
+    "Software Development :: Widget Sets":
+      value: "Topic :: Software Development :: Widget Sets"
+    "System":
+      value: "Topic :: System"
+    "System :: Archiving":
+      value: "Topic :: System :: Archiving"
+    "System :: Archiving :: Backup":
+      value: "Topic :: System :: Archiving :: Backup"
+    "System :: Archiving :: Compression":
+      value: "Topic :: System :: Archiving :: Compression"
+    "System :: Archiving :: Mirroring":
+      value: "Topic :: System :: Archiving :: Mirroring"
+    "System :: Archiving :: Packaging":
+      value: "Topic :: System :: Archiving :: Packaging"
+    "System :: Benchmark":
+      value: "Topic :: System :: Benchmark"
+    "System :: Boot":
+      value: "Topic :: System :: Boot"
+    "System :: Boot :: Init":
+      value: "Topic :: System :: Boot :: Init"
+    "System :: Clustering":
+      value: "Topic :: System :: Clustering"
+    "System :: Console Fonts":
+      value: "Topic :: System :: Console Fonts"
+    "System :: Distributed Computing":
+      value: "Topic :: System :: Distributed Computing"
+    "System :: Emulators":
+      value: "Topic :: System :: Emulators"
+    "System :: Filesystems":
+      value: "Topic :: System :: Filesystems"
+    "System :: Hardware":
+      value: "Topic :: System :: Hardware"
+    "System :: Hardware :: Hardware Drivers":
+      value: "Topic :: System :: Hardware :: Hardware Drivers"
+    "System :: Hardware :: Mainframes":
+      value: "Topic :: System :: Hardware :: Mainframes"
+    "System :: Hardware :: Symmetric Multi-processing":
+      value: "Topic :: System :: Hardware :: Symmetric Multi-processing"
+    "System :: Hardware :: Universal Serial Bus (USB)":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB)"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Audio":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Audio"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Audio/Video (AV)":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Audio/Video (AV)"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Communications Device Class (CDC)":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Communications Device Class (CDC)"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Diagnostic Device":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Diagnostic Device"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Hub":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Hub"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Human Interface Device (HID)":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Human Interface Device (HID)"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Mass Storage":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Mass Storage"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Miscellaneous":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Miscellaneous"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Printer":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Printer"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Smart Card":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Smart Card"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Vendor":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Vendor"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Video (UVC)":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Video (UVC)"
+    "System :: Hardware :: Universal Serial Bus (USB) :: Wireless Controller":
+      value: "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Wireless Controller"
+    "System :: Installation/Setup":
+      value: "Topic :: System :: Installation/Setup"
+    "System :: Logging":
+      value: "Topic :: System :: Logging"
+    "System :: Monitoring":
+      value: "Topic :: System :: Monitoring"
+    "System :: Networking":
+      value: "Topic :: System :: Networking"
+    "System :: Networking :: Firewalls":
+      value: "Topic :: System :: Networking :: Firewalls"
+    "System :: Networking :: Monitoring":
+      value: "Topic :: System :: Networking :: Monitoring"
+    "System :: Networking :: Monitoring :: Hardware Watchdog":
+      value: "Topic :: System :: Networking :: Monitoring :: Hardware Watchdog"
+    "System :: Networking :: Time Synchronization":
+      value: "Topic :: System :: Networking :: Time Synchronization"
+    "System :: Operating System":
+      value: "Topic :: System :: Operating System"
+    "System :: Operating System Kernels":
+      value: "Topic :: System :: Operating System Kernels"
+    "System :: Operating System Kernels :: BSD":
+      value: "Topic :: System :: Operating System Kernels :: BSD"
+    "System :: Operating System Kernels :: GNU Hurd":
+      value: "Topic :: System :: Operating System Kernels :: GNU Hurd"
+    "System :: Operating System Kernels :: Linux":
+      value: "Topic :: System :: Operating System Kernels :: Linux"
+    "System :: Power (UPS)":
+      value: "Topic :: System :: Power (UPS)"
+    "System :: Recovery Tools":
+      value: "Topic :: System :: Recovery Tools"
+    "System :: Shells":
+      value: "Topic :: System :: Shells"
+    "System :: Software Distribution":
+      value: "Topic :: System :: Software Distribution"
+    "System :: Systems Administration":
+      value: "Topic :: System :: Systems Administration"
+    "System :: Systems Administration :: Authentication/Directory":
+      value: "Topic :: System :: Systems Administration :: Authentication/Directory"
+    "System :: Systems Administration :: Authentication/Directory :: LDAP":
+      value: "Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP"
+    "System :: Systems Administration :: Authentication/Directory :: NIS":
+      value: "Topic :: System :: Systems Administration :: Authentication/Directory :: NIS"
+    "System :: System Shells":
+      value: "Topic :: System :: System Shells"
+    "Terminals":
+      value: "Topic :: Terminals"
+    "Terminals :: Serial":
+      value: "Topic :: Terminals :: Serial"
+    "Terminals :: Telnet":
+      value: "Topic :: Terminals :: Telnet"
+    "Terminals :: Terminal Emulators/X Terminals":
+      value: "Topic :: Terminals :: Terminal Emulators/X Terminals"
+    "Text Editors":
+      value: "Topic :: Text Editors"
+    "Text Editors :: Documentation":
+      value: "Topic :: Text Editors :: Documentation"
+    "Text Editors :: Emacs":
+      value: "Topic :: Text Editors :: Emacs"
+    "Text Editors :: Integrated Development Environments (IDE)":
+      value: "Topic :: Text Editors :: Integrated Development Environments (IDE)"
+    "Text Editors :: Text Processing":
+      value: "Topic :: Text Editors :: Text Processing"
+    "Text Editors :: Word Processors":
+      value: "Topic :: Text Editors :: Word Processors"
+    "Text Processing":
+      value: "Topic :: Text Processing"
+    "Text Processing :: Filters":
+      value: "Topic :: Text Processing :: Filters"
+    "Text Processing :: Fonts":
+      value: "Topic :: Text Processing :: Fonts"
+    "Text Processing :: General":
+      value: "Topic :: Text Processing :: General"
+    "Text Processing :: Indexing":
+      value: "Topic :: Text Processing :: Indexing"
+    "Text Processing :: Linguistic":
+      value: "Topic :: Text Processing :: Linguistic"
+    "Text Processing :: Markup":
+      value: "Topic :: Text Processing :: Markup"
+    "Text Processing :: Markup :: HTML":
+      value: "Topic :: Text Processing :: Markup :: HTML"
+    "Text Processing :: Markup :: LaTeX":
+      value: "Topic :: Text Processing :: Markup :: LaTeX"
+    "Text Processing :: Markup :: Markdown":
+      value: "Topic :: Text Processing :: Markup :: Markdown"
+    "Text Processing :: Markup :: reStructuredText":
+      value: "Topic :: Text Processing :: Markup :: reStructuredText"
+    "Text Processing :: Markup :: SGML":
+      value: "Topic :: Text Processing :: Markup :: SGML"
+    "Text Processing :: Markup :: VRML":
+      value: "Topic :: Text Processing :: Markup :: VRML"
+    "Text Processing :: Markup :: XML":
+      value: "Topic :: Text Processing :: Markup :: XML"
+    "Utilities":
+      value: "Topic :: Utilities"

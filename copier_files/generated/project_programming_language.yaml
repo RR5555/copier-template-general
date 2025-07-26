@@ -1,0 +1,206 @@
+project_programming_language:
+  type: str
+  help: What is the project project programming language?
+  multichoice: true
+  choices:
+
+    "Ada":
+      value: "Programming Language :: Ada"
+    "APL":
+      value: "Programming Language :: APL"
+    "ASP":
+      value: "Programming Language :: ASP"
+    "Assembly":
+      value: "Programming Language :: Assembly"
+    "Awk":
+      value: "Programming Language :: Awk"
+    "Basic":
+      value: "Programming Language :: Basic"
+    "C":
+      value: "Programming Language :: C"
+    "C#":
+      value: "Programming Language :: C#"
+    "C++":
+      value: "Programming Language :: C++"
+    "Cold Fusion":
+      value: "Programming Language :: Cold Fusion"
+    "Cython":
+      value: "Programming Language :: Cython"
+    "D":
+      value: "Programming Language :: D"
+    "Delphi/Kylix":
+      value: "Programming Language :: Delphi/Kylix"
+    "Dylan":
+      value: "Programming Language :: Dylan"
+    "Eiffel":
+      value: "Programming Language :: Eiffel"
+    "Emacs-Lisp":
+      value: "Programming Language :: Emacs-Lisp"
+    "Erlang":
+      value: "Programming Language :: Erlang"
+    "Euler":
+      value: "Programming Language :: Euler"
+    "Euphoria":
+      value: "Programming Language :: Euphoria"
+    "F#":
+      value: "Programming Language :: F#"
+    "Forth":
+      value: "Programming Language :: Forth"
+    "Fortran":
+      value: "Programming Language :: Fortran"
+    "Go":
+      value: "Programming Language :: Go"
+    "Haskell":
+      value: "Programming Language :: Haskell"
+    "Hy":
+      value: "Programming Language :: Hy"
+    "Java":
+      value: "Programming Language :: Java"
+    "JavaScript":
+      value: "Programming Language :: JavaScript"
+    "Kotlin":
+      value: "Programming Language :: Kotlin"
+    "Lisp":
+      value: "Programming Language :: Lisp"
+    "Logo":
+      value: "Programming Language :: Logo"
+    "Lua":
+      value: "Programming Language :: Lua"
+    "ML":
+      value: "Programming Language :: ML"
+    "Modula":
+      value: "Programming Language :: Modula"
+    "Objective C":
+      value: "Programming Language :: Objective C"
+    "Object Pascal":
+      value: "Programming Language :: Object Pascal"
+    "OCaml":
+      value: "Programming Language :: OCaml"
+    "Other":
+      value: "Programming Language :: Other"
+    "Other Scripting Engines":
+      value: "Programming Language :: Other Scripting Engines"
+    "Pascal":
+      value: "Programming Language :: Pascal"
+    "Perl":
+      value: "Programming Language :: Perl"
+    "PHP":
+      value: "Programming Language :: PHP"
+    "Pike":
+      value: "Programming Language :: Pike"
+    "Pliant":
+      value: "Programming Language :: Pliant"
+    "PL/SQL":
+      value: "Programming Language :: PL/SQL"
+    "PROGRESS":
+      value: "Programming Language :: PROGRESS"
+    "Prolog":
+      value: "Programming Language :: Prolog"
+    "Python":
+      value: "Programming Language :: Python"
+    "Python :: 2":
+      value: "Programming Language :: Python :: 2"
+    "Python :: 2.3":
+      value: "Programming Language :: Python :: 2.3"
+    "Python :: 2.4":
+      value: "Programming Language :: Python :: 2.4"
+    "Python :: 2.5":
+      value: "Programming Language :: Python :: 2.5"
+    "Python :: 2.6":
+      value: "Programming Language :: Python :: 2.6"
+    "Python :: 2.7":
+      value: "Programming Language :: Python :: 2.7"
+    "Python :: 2 :: Only":
+      value: "Programming Language :: Python :: 2 :: Only"
+    "Python :: 3":
+      value: "Programming Language :: Python :: 3"
+    "Python :: 3.0":
+      value: "Programming Language :: Python :: 3.0"
+    "Python :: 3.1":
+      value: "Programming Language :: Python :: 3.1"
+    "Python :: 3.10":
+      value: "Programming Language :: Python :: 3.10"
+    "Python :: 3.11":
+      value: "Programming Language :: Python :: 3.11"
+    "Python :: 3.12":
+      value: "Programming Language :: Python :: 3.12"
+    "Python :: 3.13":
+      value: "Programming Language :: Python :: 3.13"
+    "Python :: 3.14":
+      value: "Programming Language :: Python :: 3.14"
+    "Python :: 3.15":
+      value: "Programming Language :: Python :: 3.15"
+    "Python :: 3.2":
+      value: "Programming Language :: Python :: 3.2"
+    "Python :: 3.3":
+      value: "Programming Language :: Python :: 3.3"
+    "Python :: 3.4":
+      value: "Programming Language :: Python :: 3.4"
+    "Python :: 3.5":
+      value: "Programming Language :: Python :: 3.5"
+    "Python :: 3.6":
+      value: "Programming Language :: Python :: 3.6"
+    "Python :: 3.7":
+      value: "Programming Language :: Python :: 3.7"
+    "Python :: 3.8":
+      value: "Programming Language :: Python :: 3.8"
+    "Python :: 3.9":
+      value: "Programming Language :: Python :: 3.9"
+    "Python :: 3 :: Only":
+      value: "Programming Language :: Python :: 3 :: Only"
+    "Python :: Free Threading":
+      value: "Programming Language :: Python :: Free Threading"
+    "Python :: Free Threading :: 1 - Unstable":
+      value: "Programming Language :: Python :: Free Threading :: 1 - Unstable"
+    "Python :: Free Threading :: 2 - Beta":
+      value: "Programming Language :: Python :: Free Threading :: 2 - Beta"
+    "Python :: Free Threading :: 3 - Stable":
+      value: "Programming Language :: Python :: Free Threading :: 3 - Stable"
+    "Python :: Free Threading :: 4 - Resilient":
+      value: "Programming Language :: Python :: Free Threading :: 4 - Resilient"
+    "Python :: Implementation":
+      value: "Programming Language :: Python :: Implementation"
+    "Python :: Implementation :: CPython":
+      value: "Programming Language :: Python :: Implementation :: CPython"
+    "Python :: Implementation :: GraalPy":
+      value: "Programming Language :: Python :: Implementation :: GraalPy"
+    "Python :: Implementation :: IronPython":
+      value: "Programming Language :: Python :: Implementation :: IronPython"
+    "Python :: Implementation :: Jython":
+      value: "Programming Language :: Python :: Implementation :: Jython"
+    "Python :: Implementation :: MicroPython":
+      value: "Programming Language :: Python :: Implementation :: MicroPython"
+    "Python :: Implementation :: PyPy":
+      value: "Programming Language :: Python :: Implementation :: PyPy"
+    "Python :: Implementation :: Stackless":
+      value: "Programming Language :: Python :: Implementation :: Stackless"
+    "R":
+      value: "Programming Language :: R"
+    "REBOL":
+      value: "Programming Language :: REBOL"
+    "Rexx":
+      value: "Programming Language :: Rexx"
+    "Ruby":
+      value: "Programming Language :: Ruby"
+    "Rust":
+      value: "Programming Language :: Rust"
+    "Scheme":
+      value: "Programming Language :: Scheme"
+    "Simula":
+      value: "Programming Language :: Simula"
+    "Smalltalk":
+      value: "Programming Language :: Smalltalk"
+    "SQL":
+      value: "Programming Language :: SQL"
+    "Tcl":
+      value: "Programming Language :: Tcl"
+    "Unix Shell":
+      value: "Programming Language :: Unix Shell"
+    "Visual Basic":
+      value: "Programming Language :: Visual Basic"
+    "XBasic":
+      value: "Programming Language :: XBasic"
+    "YACC":
+      value: "Programming Language :: YACC"
+    "Zope":
+      value: "Programming Language :: Zope"

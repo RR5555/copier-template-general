@@ -1,0 +1,10 @@
+project_ilename_root:
+  type: str
+  help: What is the project project typing?
+  multichoice: true
+  choices:
+
+    "Stubs Only":
+      value: "Typing :: Stubs Only"
+    "Typed":
+      value: "Typing :: Typed"

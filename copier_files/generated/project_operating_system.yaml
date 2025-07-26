@@ -1,0 +1,92 @@
+project_operating_system:
+  type: str
+  help: What is the project project operating system?
+  multichoice: true
+  choices:
+
+    "Android":
+      value: "Operating System :: Android"
+    "BeOS":
+      value: "Operating System :: BeOS"
+    "iOS":
+      value: "Operating System :: iOS"
+    "MacOS":
+      value: "Operating System :: MacOS"
+    "MacOS :: MacOS 9":
+      value: "Operating System :: MacOS :: MacOS 9"
+    "MacOS :: MacOS X":
+      value: "Operating System :: MacOS :: MacOS X"
+    "Microsoft":
+      value: "Operating System :: Microsoft"
+    "Microsoft :: MS-DOS":
+      value: "Operating System :: Microsoft :: MS-DOS"
+    "Microsoft :: Windows":
+      value: "Operating System :: Microsoft :: Windows"
+    "Microsoft :: Windows :: Windows 10":
+      value: "Operating System :: Microsoft :: Windows :: Windows 10"
+    "Microsoft :: Windows :: Windows 11":
+      value: "Operating System :: Microsoft :: Windows :: Windows 11"
+    "Microsoft :: Windows :: Windows 3.1 or Earlier":
+      value: "Operating System :: Microsoft :: Windows :: Windows 3.1 or Earlier"
+    "Microsoft :: Windows :: Windows 7":
+      value: "Operating System :: Microsoft :: Windows :: Windows 7"
+    "Microsoft :: Windows :: Windows 8":
+      value: "Operating System :: Microsoft :: Windows :: Windows 8"
+    "Microsoft :: Windows :: Windows 8.1":
+      value: "Operating System :: Microsoft :: Windows :: Windows 8.1"
+    "Microsoft :: Windows :: Windows 95/98/2000":
+      value: "Operating System :: Microsoft :: Windows :: Windows 95/98/2000"
+    "Microsoft :: Windows :: Windows CE":
+      value: "Operating System :: Microsoft :: Windows :: Windows CE"
+    "Microsoft :: Windows :: Windows NT/2000":
+      value: "Operating System :: Microsoft :: Windows :: Windows NT/2000"
+    "Microsoft :: Windows :: Windows Server 2003":
+      value: "Operating System :: Microsoft :: Windows :: Windows Server 2003"
+    "Microsoft :: Windows :: Windows Server 2008":
+      value: "Operating System :: Microsoft :: Windows :: Windows Server 2008"
+    "Microsoft :: Windows :: Windows Vista":
+      value: "Operating System :: Microsoft :: Windows :: Windows Vista"
+    "Microsoft :: Windows :: Windows XP":
+      value: "Operating System :: Microsoft :: Windows :: Windows XP"
+    "OS/2":
+      value: "Operating System :: OS/2"
+    "OS Independent":
+      value: "Operating System :: OS Independent"
+    "Other OS":
+      value: "Operating System :: Other OS"
+    "PalmOS":
+      value: "Operating System :: PalmOS"
+    "PDA Systems":
+      value: "Operating System :: PDA Systems"
+    "POSIX":
+      value: "Operating System :: POSIX"
+    "POSIX :: AIX":
+      value: "Operating System :: POSIX :: AIX"
+    "POSIX :: BSD":
+      value: "Operating System :: POSIX :: BSD"
+    "POSIX :: BSD :: BSD/OS":
+      value: "Operating System :: POSIX :: BSD :: BSD/OS"
+    "POSIX :: BSD :: FreeBSD":
+      value: "Operating System :: POSIX :: BSD :: FreeBSD"
+    "POSIX :: BSD :: NetBSD":
+      value: "Operating System :: POSIX :: BSD :: NetBSD"
+    "POSIX :: BSD :: OpenBSD":
+      value: "Operating System :: POSIX :: BSD :: OpenBSD"
+    "POSIX :: GNU Hurd":
+      value: "Operating System :: POSIX :: GNU Hurd"
+    "POSIX :: HP-UX":
+      value: "Operating System :: POSIX :: HP-UX"
+    "POSIX :: IRIX":
+      value: "Operating System :: POSIX :: IRIX"
+    "POSIX :: Linux":
+      value: "Operating System :: POSIX :: Linux"
+    "POSIX :: Other":
+      value: "Operating System :: POSIX :: Other"
+    "POSIX :: SCO":
+      value: "Operating System :: POSIX :: SCO"
+    "POSIX :: SunOS/Solaris":
+      value: "Operating System :: POSIX :: SunOS/Solaris"
+    "RISC OS":
+      value: "Operating System :: RISC OS"
+    "Unix":
+      value: "Operating System :: Unix"

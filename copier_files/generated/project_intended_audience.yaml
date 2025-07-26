@@ -1,0 +1,34 @@
+project_intended_audience:
+  type: str
+  help: What is the project project intended audience?
+  multichoice: true
+  choices:
+
+    "Customer Service":
+      value: "Intended Audience :: Customer Service"
+    "Developers":
+      value: "Intended Audience :: Developers"
+    "Education":
+      value: "Intended Audience :: Education"
+    "End Users/Desktop":
+      value: "Intended Audience :: End Users/Desktop"
+    "Financial and Insurance Industry":
+      value: "Intended Audience :: Financial and Insurance Industry"
+    "Healthcare Industry":
+      value: "Intended Audience :: Healthcare Industry"
+    "Information Technology":
+      value: "Intended Audience :: Information Technology"
+    "Legal Industry":
+      value: "Intended Audience :: Legal Industry"
+    "Manufacturing":
+      value: "Intended Audience :: Manufacturing"
+    "Other Audience":
+      value: "Intended Audience :: Other Audience"
+    "Religion":
+      value: "Intended Audience :: Religion"
+    "Science/Research":
+      value: "Intended Audience :: Science/Research"
+    "System Administrators":
+      value: "Intended Audience :: System Administrators"
+    "Telecommunications Industry":
+      value: "Intended Audience :: Telecommunications Industry"

@@ -1,0 +1,134 @@
+project_natural_language:
+  type: str
+  help: What is the project project natural language?
+  multichoice: true
+  choices:
+
+    "Afrikaans":
+      value: "Natural Language :: Afrikaans"
+    "Arabic":
+      value: "Natural Language :: Arabic"
+    "Armenian":
+      value: "Natural Language :: Armenian"
+    "Basque":
+      value: "Natural Language :: Basque"
+    "Bengali":
+      value: "Natural Language :: Bengali"
+    "Bosnian":
+      value: "Natural Language :: Bosnian"
+    "Bulgarian":
+      value: "Natural Language :: Bulgarian"
+    "Cantonese":
+      value: "Natural Language :: Cantonese"
+    "Catalan":
+      value: "Natural Language :: Catalan"
+    "Catalan (Valencian)":
+      value: "Natural Language :: Catalan (Valencian)"
+    "Chinese (Simplified)":
+      value: "Natural Language :: Chinese (Simplified)"
+    "Chinese (Traditional)":
+      value: "Natural Language :: Chinese (Traditional)"
+    "Croatian":
+      value: "Natural Language :: Croatian"
+    "Czech":
+      value: "Natural Language :: Czech"
+    "Danish":
+      value: "Natural Language :: Danish"
+    "Dutch":
+      value: "Natural Language :: Dutch"
+    "English":
+      value: "Natural Language :: English"
+    "Esperanto":
+      value: "Natural Language :: Esperanto"
+    "Estonian":
+      value: "Natural Language :: Estonian"
+    "Finnish":
+      value: "Natural Language :: Finnish"
+    "French":
+      value: "Natural Language :: French"
+    "Galician":
+      value: "Natural Language :: Galician"
+    "Georgian":
+      value: "Natural Language :: Georgian"
+    "German":
+      value: "Natural Language :: German"
+    "Greek":
+      value: "Natural Language :: Greek"
+    "Hebrew":
+      value: "Natural Language :: Hebrew"
+    "Hindi":
+      value: "Natural Language :: Hindi"
+    "Hungarian":
+      value: "Natural Language :: Hungarian"
+    "Icelandic":
+      value: "Natural Language :: Icelandic"
+    "Indonesian":
+      value: "Natural Language :: Indonesian"
+    "Irish":
+      value: "Natural Language :: Irish"
+    "Italian":
+      value: "Natural Language :: Italian"
+    "Japanese":
+      value: "Natural Language :: Japanese"
+    "Javanese":
+      value: "Natural Language :: Javanese"
+    "Korean":
+      value: "Natural Language :: Korean"
+    "Latin":
+      value: "Natural Language :: Latin"
+    "Latvian":
+      value: "Natural Language :: Latvian"
+    "Lithuanian":
+      value: "Natural Language :: Lithuanian"
+    "Macedonian":
+      value: "Natural Language :: Macedonian"
+    "Malay":
+      value: "Natural Language :: Malay"
+    "Marathi":
+      value: "Natural Language :: Marathi"
+    "Nepali":
+      value: "Natural Language :: Nepali"
+    "Norwegian":
+      value: "Natural Language :: Norwegian"
+    "Panjabi":
+      value: "Natural Language :: Panjabi"
+    "Persian":
+      value: "Natural Language :: Persian"
+    "Polish":
+      value: "Natural Language :: Polish"
+    "Portuguese":
+      value: "Natural Language :: Portuguese"
+    "Portuguese (Brazilian)":
+      value: "Natural Language :: Portuguese (Brazilian)"
+    "Romanian":
+      value: "Natural Language :: Romanian"
+    "Russian":
+      value: "Natural Language :: Russian"
+    "Serbian":
+      value: "Natural Language :: Serbian"
+    "Slovak":
+      value: "Natural Language :: Slovak"
+    "Slovenian":
+      value: "Natural Language :: Slovenian"
+    "Spanish":
+      value: "Natural Language :: Spanish"
+    "Swedish":
+      value: "Natural Language :: Swedish"
+    "Tamil":
+      value: "Natural Language :: Tamil"
+    "Telugu":
+      value: "Natural Language :: Telugu"
+    "Thai":
+      value: "Natural Language :: Thai"
+    "Tibetan":
+      value: "Natural Language :: Tibetan"
+    "Turkish":
+      value: "Natural Language :: Turkish"
+    "Ukrainian":
+      value: "Natural Language :: Ukrainian"
+    "Urdu":
+      value: "Natural Language :: Urdu"
+    "Vietnamese":
+      value: "Natural Language :: Vietnamese"
+    "Yiddish":
+      value: "Natural Language :: Yiddish"
