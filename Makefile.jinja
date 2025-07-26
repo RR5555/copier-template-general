@@ -1,6 +1,10 @@
 .DEFAULT_GOAL := help
 IMG_NAME ?= '{{img_name}}'
 
+
+
+###### Docker ######
+
 {% if docker_type == ['cpu'] or docker_type == ['gpu'] %}
 docker-build: ## Build the Docker container
 	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .
@@ -36,7 +40,7 @@ docker-build-gpu: ## Build the Docker container [gpu]
 
 
 docker-run-gpu: ## Run the Docker container [gpu]
-	docker run --rm -it \
+	docker run --rm -it -v .:. \
 	--name $(IMG_NAME)-gpu $(IMG_NAME)-gpu
 
 
@@ -44,6 +48,38 @@ docker-bash-gpu: ## Access container bash [gpu]
 	docker exec -it $(IMG_NAME)-gpu /bin/bash
 
 {% endif %}
+
+
+###### Project ######
+
+dev-install: ## uv sync
+	uv sync --all-groups
+
+lint: ## Run linter [dev]
+	uv run ruff check .
+
+format: ## Run formatter [dev]
+	uv run ruff format --diff .
+
+tox-rerun: ## Launch Tox [dev, tox]
+	uv run tox --parallel
+
+tox-run: ## Launch Tox [dev, tox]
+	uv run tox -r --parallel
+
+pre-commit: ## Run pre-commit
+	uv run pre-commit run --all-files --show-diff-on-failure
+
+pre-commit-enforce: ## Install the pre-commit as a git hook (you can just run pre-commit without doing that by: `make pre-commit`)
+	uv run pre-commit install
+
+update-pre-commit-hooks: ## Update automatically the hooks for `pre-commit`
+	uv run pre-commit autoupdate
+
+
+
+
+###### Help ######
 
 # https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 .PHONY: help
