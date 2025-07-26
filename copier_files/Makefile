@@ -15,7 +15,7 @@ generate-classifiers: ## Generate question files for classifiers
 		while IFS2= read -r subcat; do\
 			echo "    \"$$(echo "$$subcat" | sed -n 's/^[^:]* :: // p')\":\n      value: \"$$subcat\"" >> $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p');\
 		done;\
-		echo "!include $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p')\n---" >> generated_classifiers_include.yaml;\
+		echo "!include $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/copier_files\/generated\/project_\L\1.yaml/ p')\n---" >> generated_classifiers_include.yaml;\
 	done 2>/dev/null;\
 	rm test.txt
 
