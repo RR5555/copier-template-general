@@ -34,9 +34,9 @@ project_homepage:
   help: Project Homepage
 
 ### Classifiers ###
-
+---
 !include generated/generated_classifiers_include.yaml
-
+---
 
 
 
