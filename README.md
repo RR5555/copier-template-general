@@ -40,3 +40,14 @@ def _include(loader: yaml.Loader, node: yaml.Node) -> Any:
 
 NOTE: There might be a way to keep the path relative to the include file instead of relative to root file
 
+## Nested questions
+
+Check if I can use https://copier.readthedocs.io/en/stable/creating/#loop-over-lists-to-generate-files-and-directories for unfolding select
+
+
+## README, .gitignore, etc
+
+Either precise template `subdirectory`: https://copier.readthedocs.io/en/stable/configuring/#subdirectory
+Or create suffixed version: https://copier.readthedocs.io/en/stable/configuring/#templates_suffix:
+> [!NOTE]
+> If there is a file with the template suffix next to another one without it, the one without suffix will be ignored.
