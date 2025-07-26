@@ -10,7 +10,7 @@ generate-classifiers: ## Generate question files for classifiers
 		echo "###### $$category ######";\
 		filename_root=$$(echo "$$category" | sed 's/ /_/');\
 		echo "$$filename_root";\
-		echo "$$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1/ p'):\n  type: str\n  help: What is the project $$(echo "$$category" | sed -n 's/\(.*\?\)/project \L\1/ p')?\n  multichoice: true\n  choices:\n" > $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p');\
+		echo "$$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1/ p'):\n  type: str\n  help: What is the project $$(echo "$$category" | sed -n 's/\(.*\?\)/project \L\1/ p')?\n  multiselect: true\n  choices:\n" > $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p');\
 		cat test.txt | awk -F '\\s*::\\s*' -v var="$$category" '$$1 ~ var {print $$0;}' | sort -u |\
 		while IFS2= read -r subcat; do\
 			echo "    \"$$(echo "$$subcat" | sed -n 's/^[^:]* :: // p')\":\n      value: \"$$subcat\"" >> $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p');\
