@@ -35,7 +35,7 @@ project_homepage:
 
 ### Classifiers ###
 ---
-!include generated/generated_classifiers_include.yaml
+!include copier_files/generated/generated_classifiers_include.yaml
 ---
 
 
