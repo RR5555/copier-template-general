@@ -34,15 +34,9 @@ project_homepage:
   help: Project Homepage
 
 ### Classifiers ###
-# https://pypi.org/classifiers/
-# TODO: Extract the classfiers and make them multichoices questions
-
-# project_intended_audience:
-#   type: str
-#   help: What is the project intended audience?
-#   multichoice: true
-#   choices:
-#     - 
+---
+!include generated/generated_classifiers_include.yaml
+---
 
 
 
