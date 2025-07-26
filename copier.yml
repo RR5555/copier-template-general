@@ -1,7 +1,7 @@
 # questions
 
 ---
-!include copier_files/setting.yaml
+!include copier_files/settings.yaml
 ---
 !include copier_files/project_details.yaml
 ---
