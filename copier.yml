@@ -33,10 +33,10 @@ doc_tool:
 
 
 
-# _exclude:
-#   - "copier_files"
+_exclude:
+  - "copier_files"
 
-_subdirectory: copier_files
+# _subdirectory: copier_files
 
 
 _message_after_copy: |
