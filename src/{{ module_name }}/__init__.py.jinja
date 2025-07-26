@@ -1,0 +1,13 @@
+"""{{ ' '.join(elem[0].upper()+elem[1:] for elem in module_name.split('_'))}}.{% if project_description %}
+
+{{ project_description }}
+
+{% endif %}"""
+
+from .{{ module_name }} import {{ ''.join(elem[0].upper()+elem[1:] for elem in module_name.split('_'))}}
+
+__version__ = '0.0.1'
+
+__all__ = [ '{{ ''.join(elem[0].upper()+elem[1:] for elem in module_name.split('_'))}}' ]
+
+
