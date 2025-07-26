@@ -1,11 +1,17 @@
 # questions
 project_name:
-    type: str
-    help: What is your project name?
+  type: str
+  help: What is your project name?
 
 module_name:
-    type: str
-    help: What is your Python module name?
+  type: str
+  help: What is your Python module name?
+
+
+use_vscode:
+  type: bool
+  help: Do you want to use VSCode?
+  default: true
 
 
 use_docker:
