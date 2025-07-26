@@ -2,6 +2,7 @@
 
 ---
 !include copier_files/settings.yaml
+---
 !include copier_files/project_details.yaml
 ---
 
@@ -14,6 +15,7 @@ use_vscode:
 
 ---
 !include copier_files/docker.yaml
+---
 !include copier_files/docstring.yaml
 ---
 
