@@ -3,14 +3,19 @@
 
 generate-classifiers: ## Generate question files for classifiers
 	cd ./generated;\
+	echo '---' > generated_classifiers_include.yaml;\
 	curl https://pypi.org/classifiers/ | sed -n '/<h2>List of classifiers<\/h2>/,/<\/ul>/ p' | sed -n -E 's/.*?>(.*?)<\/a>/\1/ p' > test.txt;\
 	cat test.txt | awk -F '\\s*::\\s*' '{print $$1;}' | sort -u |\
 	while IFS= read -r category; do\
-		echo "$$(echo "$$category" | sed -n 's/ /_/ p' | sed -n 's/\(.*\?\)/project_\L\1/ p'):\n  type: str\n  help: What is the project $$(echo "$$category" | sed -n 's/\(.*\?\)/project \L\1/ p')?\n  multichoice: true\n  choices:\n" > $$(echo "$$category" | sed -n 's/ /_/ p' | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p');\
+		echo "###### $$category ######";\
+		filename_root=$$(echo "$$category" | sed 's/ /_/');\
+		echo "$$filename_root";\
+		echo "$$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1/ p'):\n  type: str\n  help: What is the project $$(echo "$$category" | sed -n 's/\(.*\?\)/project \L\1/ p')?\n  multichoice: true\n  choices:\n" > $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p');\
 		cat test.txt | awk -F '\\s*::\\s*' -v var="$$category" '$$1 ~ var {print $$0;}' | sort -u |\
 		while IFS2= read -r subcat; do\
-			echo "    $$(echo "$$subcat" | awk -F '\\s*::\\s*' '{print $$2"::"$$3"::"$$4;}'):\n      value: \"$$subcat\"" >> $$(echo "$$category" | sed -n 's/ /_/ p' | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p');\
+			echo "    \"$$(echo "$$subcat" | sed -n 's/^[^:]* :: // p')\":\n      value: \"$$subcat\"" >> $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p');\
 		done;\
+		echo "!include $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/project_\L\1.yaml/ p')\n---" >> generated_classifiers_include.yaml;\
 	done 2>/dev/null;\
 	rm test.txt
 
