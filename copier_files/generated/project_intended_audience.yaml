@@ -1,7 +1,7 @@
 project_intended_audience:
   type: str
   help: What is the project project intended audience?
-  multichoice: true
+  multiselect: true
   choices:
 
     "Customer Service":

@@ -1,7 +1,7 @@
 project_framework:
   type: str
   help: What is the project project framework?
-  multichoice: true
+  multiselect: true
   choices:
 
     "AiiDA":

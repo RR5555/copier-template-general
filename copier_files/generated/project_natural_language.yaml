@@ -1,7 +1,7 @@
 project_natural_language:
   type: str
   help: What is the project project natural language?
-  multichoice: true
+  multiselect: true
   choices:
 
     "Afrikaans":

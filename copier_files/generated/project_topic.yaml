@@ -1,7 +1,7 @@
 project_topic:
   type: str
   help: What is the project project topic?
-  multichoice: true
+  multiselect: true
   choices:
 
     "Adaptive Technologies":

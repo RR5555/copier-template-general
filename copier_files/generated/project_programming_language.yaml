@@ -1,7 +1,7 @@
 project_programming_language:
   type: str
   help: What is the project project programming language?
-  multichoice: true
+  multiselect: true
   choices:
 
     "Ada":

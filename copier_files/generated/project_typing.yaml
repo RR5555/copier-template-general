@@ -1,7 +1,7 @@
 project_typing:
   type: str
   help: What is the project project typing?
-  multichoice: true
+  multiselect: true
   choices:
 
     "Stubs Only":

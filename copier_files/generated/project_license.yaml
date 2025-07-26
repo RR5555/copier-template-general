@@ -1,7 +1,7 @@
 project_license:
   type: str
   help: What is the project project license?
-  multichoice: true
+  multiselect: true
   choices:
 
     "Aladdin Free Public License (AFPL)":

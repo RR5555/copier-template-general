@@ -1,7 +1,7 @@
 project_operating_system:
   type: str
   help: What is the project project operating system?
-  multichoice: true
+  multiselect: true
   choices:
 
     "Android":

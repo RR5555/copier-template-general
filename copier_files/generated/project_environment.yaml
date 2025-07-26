@@ -1,7 +1,7 @@
 project_environment:
   type: str
   help: What is the project project environment?
-  multichoice: true
+  multiselect: true
   choices:
 
     "Console":
