@@ -17,7 +17,7 @@ project_keywords:
   help: Project keywords
   default: '[]'
   validator: >-
-        {% if not (project_keywords | regex_search('^\[(?:[\'"]\w+[\'"], ?)*[\'"]?\w*[\'"]?\]$')) %}
+        {% if not (project_keywords | regex_search('^\[(?:[\'"][\w-]+[\'"], ?)*[\'"]?[\w-]*[\'"]?\]$')) %}
         project_keywords must be a valid list of strings.
         {% endif %}
 
