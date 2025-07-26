@@ -1,10 +1,10 @@
 # questions
 
----
+
 !include copier_files/settings.yaml
----
+
 !include copier_files/project_details.yaml
----
+
 
 
 
@@ -13,11 +13,9 @@ use_vscode:
   help: Do you want to use VSCode?
   default: true
 
----
+
 !include copier_files/docker.yaml
----
 !include copier_files/docstring.yaml
----
 
 
 
