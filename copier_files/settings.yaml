@@ -1,4 +1,28 @@
-defaults:
-  user_name: "Romain Renard"
-  user_email: renardromain@hotmail.fr
-  github_user: RR5555
+
+
+change_user_defaults:
+  type: bool
+  default: False
+  help: "Do you want to change the user defaults?\n\e[37m(Romain Renard, renardromain@hotmail.fr, RR5555)\e[0m"
+
+user_name:
+  type: str
+  default: "Romain Renard"
+  help: "[project] What user name do you want to use?"
+  when: {{change_user_defaults}}
+
+user_email:
+  type: str
+  default: renardromain@hotmail.fr
+  help: "[project] What user email do you want to use?"
+  validator: >-
+    {% if not (user_email | regex_search('^.+@.+\..+$')) %}
+    user_email must look like an email address `xxxx@xxxx.xxx`.
+    {% endif %}
+  when: {{change_user_defaults}}
+
+github_user:
+  type: str
+  default: RR5555
+  help: "[project] What github user do you want to use?"
+  when: {{change_user_defaults}}
