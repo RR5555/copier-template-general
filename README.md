@@ -51,3 +51,23 @@ Either precise template `subdirectory`: https://copier.readthedocs.io/en/stable/
 Or create suffixed version: https://copier.readthedocs.io/en/stable/configuring/#templates_suffix:
 > [!NOTE]
 > If there is a file with the template suffix next to another one without it, the one without suffix will be ignored.
+
+
+
+## 
+
+
+Placeholder for project name
+Consider clean_up_on_error for prod: https://copier.readthedocs.io/en/stable/configuring/#cleanup_on_error
+Cli 'user_defaults'
+Consider: https://copier.readthedocs.io/en/stable/contributing/
+
+
+## Modifs
+
+
+## TODO
+
+TODO: `tests/test_prompt.py`:613: TODO: fix this
+TODO: https://github.com/copier-org/copier/issues/1076
+
