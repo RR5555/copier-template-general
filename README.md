@@ -2,6 +2,15 @@
 
 General Python Project Scaffolding Copier Template
 
+
+## Run Copier
+
+See [`RR5555/copier-run`: Repo to run Copier container](https://github.com/RR5555/copier-run) (or locally if single dir for all local repos [`RR5555/copier-run` - README [LOCAL]](../copier-run/README.md)).
+
+
+
+
+
 ## Docstring templates
 
 https://github.com/NilsJPWerner/autoDocstring/tree/master/src/docstring/templates
