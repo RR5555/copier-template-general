@@ -1,6 +1,6 @@
 project_operating_system:
   type: str
-  help: What is the project project operating system?
+  help: What is the project operating system?
   multiselect: true
   choices:
 

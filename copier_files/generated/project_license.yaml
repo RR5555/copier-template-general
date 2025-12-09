@@ -1,6 +1,6 @@
 project_license:
   type: str
-  help: What is the project project license?
+  help: What is the project license?
   multiselect: true
   choices:
 

@@ -1,6 +1,6 @@
 project_programming_language:
   type: str
-  help: What is the project project programming language?
+  help: What is the project programming language?
   multiselect: true
   choices:
 
@@ -202,5 +202,7 @@ project_programming_language:
       value: "Programming Language :: XBasic"
     "YACC":
       value: "Programming Language :: YACC"
+    "Zig":
+      value: "Programming Language :: Zig"
     "Zope":
       value: "Programming Language :: Zope"

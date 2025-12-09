@@ -1,6 +1,6 @@
 project_development_status:
   type: str
-  help: What is the project project development status?
+  help: What is the project development status?
   multiselect: true
   choices:
 

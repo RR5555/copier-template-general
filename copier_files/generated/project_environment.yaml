@@ -1,6 +1,6 @@
 project_environment:
   type: str
-  help: What is the project project environment?
+  help: What is the project environment?
   multiselect: true
   choices:
 
@@ -64,6 +64,8 @@ project_environment:
       value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.5"
     "GPU :: NVIDIA CUDA :: 12 :: 12.6":
       value: "Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.6"
+    "GPU :: NVIDIA CUDA :: 13":
+      value: "Environment :: GPU :: NVIDIA CUDA :: 13"
     "GPU :: NVIDIA CUDA :: 2.0":
       value: "Environment :: GPU :: NVIDIA CUDA :: 2.0"
     "GPU :: NVIDIA CUDA :: 2.1":

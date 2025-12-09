@@ -1,6 +1,6 @@
 project_natural_language:
   type: str
-  help: What is the project project natural language?
+  help: What is the project natural language?
   multiselect: true
   choices:
 

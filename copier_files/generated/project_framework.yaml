@@ -1,6 +1,6 @@
 project_framework:
   type: str
-  help: What is the project project framework?
+  help: What is the project framework?
   multiselect: true
   choices:
 
@@ -108,6 +108,10 @@ project_framework:
       value: "Framework :: Django :: 5.1"
     "Django :: 5.2":
       value: "Framework :: Django :: 5.2"
+    "Django :: 6":
+      value: "Framework :: Django :: 6"
+    "Django :: 6.0":
+      value: "Framework :: Django :: 6.0"
     "Django CMS":
       value: "Framework :: Django CMS"
     "Django CMS :: 3.10":
@@ -144,6 +148,8 @@ project_framework:
       value: "Framework :: Hypothesis"
     "IDLE":
       value: "Framework :: IDLE"
+    "InvenTree":
+      value: "Framework :: InvenTree"
     "IPython":
       value: "Framework :: IPython"
     "Jupyter":
@@ -200,6 +206,8 @@ project_framework:
       value: "Framework :: Odoo :: 17.0"
     "Odoo :: 18.0":
       value: "Framework :: Odoo :: 18.0"
+    "Odoo :: 19.0":
+      value: "Framework :: Odoo :: 19.0"
     "Odoo :: 8.0":
       value: "Framework :: Odoo :: 8.0"
     "Odoo :: 9.0":
@@ -348,3 +356,5 @@ project_framework:
       value: "Framework :: Zope :: 4"
     "Zope :: 5":
       value: "Framework :: Zope :: 5"
+    "Zope :: 6":
+      value: "Framework :: Zope :: 6"

@@ -1,6 +1,6 @@
 project_topic:
   type: str
-  help: What is the project project topic?
+  help: What is the project topic?
   multiselect: true
   choices:
 
@@ -368,6 +368,10 @@ project_topic:
       value: "Topic :: Scientific/Engineering :: Image Recognition"
     "Scientific/Engineering :: Information Analysis":
       value: "Topic :: Scientific/Engineering :: Information Analysis"
+    "Scientific/Engineering :: Instrument Drivers":
+      value: "Topic :: Scientific/Engineering :: Instrument Drivers"
+    "Scientific/Engineering :: Instrument Drivers :: IVI Conformant":
+      value: "Topic :: Scientific/Engineering :: Instrument Drivers :: IVI Conformant"
     "Scientific/Engineering :: Interface Engine/Protocol Translator":
       value: "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator"
     "Scientific/Engineering :: Mathematics":

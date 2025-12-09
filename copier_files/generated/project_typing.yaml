@@ -1,6 +1,6 @@
 project_typing:
   type: str
-  help: What is the project project typing?
+  help: What is the project typing?
   multiselect: true
   choices:
 
