@@ -9,7 +9,7 @@ user_name:
   type: str
   default: "Romain Renard"
   help: "[project] What user name do you want to use?"
-  when: {{change_user_defaults}}
+  when: "{{change_user_defaults}}"
 
 user_email:
   type: str
@@ -19,10 +19,10 @@ user_email:
     {% if not (user_email | regex_search('^.+@.+\..+$')) %}
     user_email must look like an email address `xxxx@xxxx.xxx`.
     {% endif %}
-  when: {{change_user_defaults}}
+  when: "{{change_user_defaults}}"
 
 github_user:
   type: str
   default: RR5555
   help: "[project] What github user do you want to use?"
-  when: {{change_user_defaults}}
+  when: "{{change_user_defaults}}"
