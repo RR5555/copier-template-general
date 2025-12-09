@@ -21,7 +21,7 @@ find *.mustache | awk -F '.' '{print "mv "$1".mustache \"{% if docstring_templat
 
 
 
-## classifiers
+## PyPI classifiers generation
 
 ```bash
 cd copier_files
