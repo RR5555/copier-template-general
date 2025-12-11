@@ -18,6 +18,9 @@ generate-classifiers: ## Generate question files for classifiers
 		echo "!include $$(echo "$$filename_root" | sed -n 's/\(.*\?\)/copier_files\/generated\/project_\L\1.yaml/ p')\n---" >> generated_classifiers_include.yaml;\
 	done 2>/dev/null;\
 	rm test.txt
+	sed -i '4d' ./generated/project_development_status.yaml
+	sed -i '4d' ./generated/project_typing.yaml
+
 
 
 
