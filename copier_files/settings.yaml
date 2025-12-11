@@ -3,7 +3,7 @@
 change_user_defaults:
   type: bool
   default: False
-  help: "Do you want to change the user defaults?\n\e[[37m(Romain Renard, renardromain@hotmail.fr, RR5555)\e[[0m"
+  help: "Do you want to change the user defaults?\n\033[37m(Romain Renard, renardromain@hotmail.fr, RR5555)\033[0m"
 
 user_name:
   type: str
