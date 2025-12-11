@@ -11,7 +11,7 @@ docker-build: ## Build the Docker container
 
 
 docker-run: ## Run the Docker container
-	docker run --rm -it -v .:. \
+	docker run --rm -it -v .:/project \
 	--name $(IMG_NAME) $(IMG_NAME)
 
 
@@ -29,7 +29,7 @@ docker-build: ## Build the Docker container
 
 
 docker-run: ## Run the Docker container
-	docker run --rm -it -v .:. \
+	docker run --rm -it -v .:/project \
 	--name $(IMG_NAME) $(IMG_NAME)
 
 
@@ -43,7 +43,7 @@ docker-build-gpu: ## Build the Docker container [gpu]
 
 
 docker-run-gpu: ## Run the Docker container [gpu]
-	docker run --rm -it -v .:. \
+	docker run --rm -it -v .:/project \
 	--name $(IMG_NAME)-gpu $(IMG_NAME)-gpu
 
 
