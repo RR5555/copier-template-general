@@ -13,14 +13,30 @@ keywords = {{ project_keywords }}
 license = {text = "{{ project_licence }}"}
 classifiers=[
         '{{ project_development_status }}',
-        {% if project_environment %}{% for p_var in project_environment %}'{{ p_var }}',{% endfor %}{% endif %}
-        {% if project_framework %}{% for p_var in project_framework %}'{{ p_var }}',{% endfor %}{% endif %}
-        {% if project_intended_audience %}{% for p_var in project_intended_audience %}'{{ p_var }}',{% endfor %}{% endif %}
-        {% if project_license %}{% for p_var in project_license %}'{{ p_var }}',{% endfor %}{% endif %}
-        {% if project_natural_language %}{% for p_var in project_natural_language %}'{{ p_var }}',{% endfor %}{% endif %}
-        {% if project_operating_system %}{% for p_var in project_operating_system %}'{{ p_var }}',{% endfor %}{% endif %}
-        {% if project_programming_language %}{% for p_var in project_programming_language %}'{{ p_var }}',{% endfor %}{% endif %}
-        {% if project_topic %}{% for p_var in project_topic %}'{{ p_var }}',{% endfor %}{% endif %}
+        {% if project_environment %}{% for p_var in project_environment -%}
+        '{{ p_var }}',
+        {% endfor %}{% endif %}
+        {% if project_framework %}{% for p_var in project_framework -%}
+        '{{ p_var }}',
+        {% endfor %}{% endif %}
+        {% if project_intended_audience %}{% for p_var in project_intended_audience -%}
+        '{{ p_var }}',
+        {% endfor %}{% endif %}
+        {% if project_license %}{% for p_var in project_license -%}
+        '{{ p_var }}',
+        {% endfor %}{% endif %}
+        {% if project_natural_language %}{% for p_var in project_natural_language -%}
+        '{{ p_var }}',
+        {% endfor %}{% endif %}
+        {% if project_operating_system %}{% for p_var in project_operating_system -%}
+        '{{ p_var }}',
+        {% endfor %}{% endif %}
+        {% if project_programming_language %}{% for p_var in project_programming_language -%}
+        '{{ p_var }}',
+        {% endfor %}{% endif %}
+        {% if project_topic %}{% for p_var in project_topic -%}
+        '{{ p_var }}',
+        {% endfor %}{% endif %}
         '{{ project_typing }}',
 ]
 requires-python = ">=3.5"
