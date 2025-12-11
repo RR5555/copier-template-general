@@ -12,13 +12,13 @@ maintainers = [
 keywords = {{ project_keywords }}
 license = {text = "{{ project_licence }}"}
 classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
-        'Intended Audience :: End Users/Desktop',
-        'Topic :: Software Development :: Libraries',
-        'License :: OSI Approved :: {{ project_licence }} License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python :: 3',
+        '{{ project_development_status }}',
+        {% if project_environment %}
+        {% for p_env in project_environment %}
+        '{{ p_env }}',
+        {% endfor %}
+        {% endif %}
+        '{{ project_typing }}',
 ]
 requires-python = ">=3.5"
 dependencies = []
