@@ -13,7 +13,7 @@ keywords = {{ project_keywords }}
 license = {text = "{{ project_licence }}"}
 classifiers=[
         '{{ project_development_status }}',
-        
+
         {% if project_environment %}{% for p_var in project_environment -%}
         '{{ p_var }}',
         {% endfor %}{% endif %}
