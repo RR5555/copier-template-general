@@ -70,6 +70,9 @@ tox-rerun: ## Launch Tox [dev, tox]
 tox-run: ## Launch Tox [dev, tox]
 	uv run tox -r --parallel
 
+test: ## Pytest with coverage
+	pytest --cov --durations=5 --color=yes
+
 pre-commit: ## Run pre-commit
 	uv run pre-commit run --all-files --show-diff-on-failure
 
