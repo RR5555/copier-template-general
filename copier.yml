@@ -30,6 +30,10 @@ doc_tool:
     - mkdocs
   default: mkdocs
 
+test_copier_template:
+  type: bool
+  help: Do you want to generate dummy files to test the template itself?
+  default: False
 
 
 _exclude:

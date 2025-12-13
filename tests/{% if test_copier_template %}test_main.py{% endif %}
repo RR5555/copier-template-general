@@ -1,0 +1,4 @@
+from test_project.main import dummy
+
+def test_dummy():
+    assert dummy(1) == 1

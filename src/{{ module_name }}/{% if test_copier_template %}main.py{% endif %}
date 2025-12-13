@@ -1,0 +1,12 @@
+"""Main module."""
+
+def dummy(x:int) -> int:
+    """Nothing.
+
+    Args:
+        x(int): input
+
+    Returns:
+        int: output
+    """
+    return x
