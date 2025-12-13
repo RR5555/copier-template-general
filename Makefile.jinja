@@ -83,6 +83,36 @@ update-pre-commit-hooks: ## Update automatically the hooks for `pre-commit`
 	uv run pre-commit autoupdate
 
 
+###### Docs ######
+
+docs-build: ## Build docs
+	{% if doc_tool == 'mkdocs' -%}
+	mkdocs build
+	{% endif %}
+	{% if doc_tool == 'sphinx' -%}
+	echo "Not implemented"
+	{% endif %}
+
+docs-deploy: ## Deploy docs
+	{% if doc_tool == 'mkdocs' -%}
+	mkdocs serve
+	{% endif %}
+	{% if doc_tool == 'sphinx' -%}
+	echo "Not implemented"
+	{% endif %}
+
+docs-docker-build: ## Build docs using Docker container
+	{% if doc_tool == 'mkdocs' -%}
+	docker run --rm -it -v .:/project\
+	--name $(IMG_NAME)-docs $(IMG_NAME) "cd project; uv sync --only-group mkdocs; mkdocs build"
+	{% endif %}
+
+
+docs-docker-serve: ## Build docs using Docker container
+	{% if doc_tool == 'mkdocs' -%}
+	docker run --rm -it -v .:/project -p 8000:8000\
+	--name $(IMG_NAME)-docs $(IMG_NAME) "cd project; uv sync --only-group mkdocs; mkdocs serve"
+	{% endif %}
 
 
 ###### Help ######
