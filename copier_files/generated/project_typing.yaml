@@ -7,3 +7,5 @@ project_typing:
       value: "Typing :: Stubs Only"
     "Typed":
       value: "Typing :: Typed"
+
+  default: "Typed"
