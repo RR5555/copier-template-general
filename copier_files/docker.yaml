@@ -17,3 +17,4 @@ img_name:
   type: str
   help: What's the name of your Docker img to be created for this project?
   when: "{{ use_docker }}"
+  default: "{{ module_name }}"
