@@ -103,15 +103,15 @@ docs-deploy: ## Deploy docs
 
 docs-docker-build: ## Build docs using Docker container
 	{% if doc_tool == 'mkdocs' -%}
-	docker run --rm -it -v .:/project\
-	--name $(IMG_NAME)-docs $(IMG_NAME) "cd project; uv sync --only-group mkdocs; mkdocs build"
+	docker run --rm -it -v .:/project \
+	--name $(IMG_NAME)-docs $(IMG_NAME) /bin/bash -c "cd project; uv sync --only-group mkdocs; uv run mkdocs build"
 	{% endif %}
 
 
 docs-docker-serve: ## Build docs using Docker container
 	{% if doc_tool == 'mkdocs' -%}
-	docker run --rm -it -v .:/project -p 8000:8000\
-	--name $(IMG_NAME)-docs $(IMG_NAME) "cd project; uv sync --only-group mkdocs; mkdocs serve"
+	docker run --rm -it -v .:/project -p 8000:8000 \
+	--name $(IMG_NAME)-docs $(IMG_NAME) /bin/bash -c  "cd project; uv sync --only-group mkdocs; uv run mkdocs serve -a 0.0.0.0:8000"
 	{% endif %}
 
 
