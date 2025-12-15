@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-IMG_NAME ?= '{{img_name}}'
+IMG_NAME ?= {{img_name}}
 
 
 {% if docker_type == ['cpu'] or docker_type == ['gpu'] %}
