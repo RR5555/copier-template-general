@@ -8,4 +8,4 @@ project_typing:
     "Typed":
       value: "Typing :: Typed"
 
-  default: "Typed"
+  default: "Typing :: Typed"

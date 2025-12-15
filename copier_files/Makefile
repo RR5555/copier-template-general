@@ -20,7 +20,7 @@ generate-classifiers: ## Generate question files for classifiers
 	rm test.txt
 	sed -i '4d' ./generated/project_development_status.yaml
 	sed -i '4d' ./generated/project_typing.yaml
-	sed -i '9a\\n  default: "Typed"' ./generated/project_typing.yaml
+	sed -i '9a\\n  default: "Typing :: Typed"' ./generated/project_typing.yaml
 
 
 
