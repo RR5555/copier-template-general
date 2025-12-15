@@ -71,7 +71,7 @@ tox-run: ## Launch Tox [dev, tox]
 	uv run tox -r --parallel
 
 test: ## Pytest with coverage
-	pytest --cov --durations=5 --color=yes
+	uv run pytest --cov --durations=5 --color=yes
 
 pre-commit: ## Run pre-commit
 	uv run pre-commit run --all-files --show-diff-on-failure
@@ -87,7 +87,7 @@ update-pre-commit-hooks: ## Update automatically the hooks for `pre-commit`
 
 docs-build: ## Build docs
 	{% if doc_tool == 'mkdocs' -%}
-	mkdocs build
+	uv run mkdocs build
 	{% endif %}
 	{% if doc_tool == 'sphinx' -%}
 	echo "Not implemented"
@@ -95,7 +95,7 @@ docs-build: ## Build docs
 
 docs-deploy: ## Deploy docs
 	{% if doc_tool == 'mkdocs' -%}
-	mkdocs serve
+	uv run mkdocs serve
 	{% endif %}
 	{% if doc_tool == 'sphinx' -%}
 	echo "Not implemented"
