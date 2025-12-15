@@ -1,0 +1,10 @@
+"""Tools."""
+
+def tool(a:str, b:str) -> None:
+	"""Print "Hello **a** **b**".
+
+	Args:
+		a (str): _description_
+		b (str): _description_
+	"""
+	print(f"Hello {a} {b}!")

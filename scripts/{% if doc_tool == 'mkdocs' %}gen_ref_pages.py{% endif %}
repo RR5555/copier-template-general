@@ -1,0 +1,35 @@
+"""Generate the code reference pages."""
+
+from pathlib import Path
+
+import mkdocs_gen_files
+
+nav = mkdocs_gen_files.Nav() # Navigation object
+
+root = Path(__file__).parent.parent
+src = root / "src"  # It's important to build a path relative to the script itself, to make it possible to build the docs with MkDocs'  [`-f` option](https://www.mkdocs.org/user-guide/cli/#mkdocs-build).
+
+for path in sorted(src.rglob("*.py")):  # Here we recursively list all  `.py`  files, but you can adapt the code to list files with other extensions of course, supporting other languages than Python.
+	module_path = path.relative_to(src).with_suffix("")  # The module path will look like  `project/lorem` . It will be used to build the  *mkdocstrings*  autodoc identifier.
+	doc_path = path.relative_to(src).with_suffix(".md")  # This is the partial path of the Markdown page for the module.
+	full_doc_path = Path("reference", doc_path)  # This is the full path of the Markdown page within the docs. Here we put all reference pages into a  `reference`  folder.
+
+	parts = tuple(module_path.parts)
+
+	if parts[-1] == "__init__":  # This part is only relevant for Python modules. We skip  `__main__`  modules and remove  `__init__`  from the module parts as it's implicit during imports.
+		parts = parts[:-1]
+		doc_path = doc_path.with_name("index.md") # Bind `__init__` pages to sections themselves
+		full_doc_path = full_doc_path.with_name("index.md") # Bind `__init__` pages to sections themselves
+	elif parts[-1] == "__main__":
+		continue
+
+	nav[parts] = doc_path.as_posix()  # Progressively build the navigation object.
+
+	with mkdocs_gen_files.open(full_doc_path, "w") as fd:  # Magic! Add the file to MkDocs pages, without actually writing it in the docs folder.
+		identifier = ".".join(parts)  # Build the autodoc identifier. Here we document Python modules, so the identifier is a dot-separated path, like  `project.lorem` .
+		fd.write(f"::: {identifier}")  # Actually write to the magic file.
+
+	mkdocs_gen_files.set_edit_path(full_doc_path, path.relative_to(root))  # We can even set the  `edit_uri`  on the pages.
+
+with mkdocs_gen_files.open("reference/SUMMARY.md", "w") as nav_file:  # At the end, create a magic, literate navigation file called  `SUMMARY.md`  in the  `reference`  folder.
+	nav_file.writelines(nav.build_literate_nav())  # Write the navigation as a Markdown list in the literate navigation file.
