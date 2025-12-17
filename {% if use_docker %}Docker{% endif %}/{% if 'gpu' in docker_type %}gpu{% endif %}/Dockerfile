@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM nvidia/cuda:13.0.2-cudnn-runtime-ubuntu24.04
 
 RUN apt update -y && apt upgrade -y && apt install -y curl git make && curl -LsSf https://astral.sh/uv/install.sh | sh && apt autoremove
 
