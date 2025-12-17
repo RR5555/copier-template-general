@@ -2,11 +2,10 @@
 IMG_NAME ?= {{img_name}}
 
 
-{% if docker_type == ['cpu'] or docker_type == ['gpu'] %}
-###### Docker ######
 
-
-docker-build: ## Build the Docker container
+{% if docker_type %}###### Docker ######{% endif %}
+{% if 'cpu' in docker_type %}
+docker-build: ## Build the Docker img
 	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .
 
 
@@ -18,38 +17,24 @@ docker-run: ## Run the Docker container
 docker-bash: ## Access container bash
 	docker exec -it $(IMG_NAME) /bin/bash
 
+docker-clean: ## Remove Docker img
+	docker rmi $(IMG_NAME)
 {% endif %}
-
-{% if docker_type == ['cpu','gpu'] %}
-###### Docker ######
-
-
-docker-build: ## Build the Docker container
-	docker build -t $(IMG_NAME) -f ./Docker/vanilla/Dockerfile .
-
-
-docker-run: ## Run the Docker container
-	docker run --rm -it -v .:/project \
-	--name $(IMG_NAME) $(IMG_NAME)
-
-
-docker-bash: ## Access container bash
-	docker exec -it $(IMG_NAME) /bin/bash
-
-
-
-docker-build-gpu: ## Build the Docker container [gpu]
+{% if 'gpu' in docker_type %}
+docker-build-gpu: ## Build the Docker img [gpu]
 	docker build -t $(IMG_NAME)-gpu -f ./Docker/gpu/Dockerfile .
 
 
 docker-run-gpu: ## Run the Docker container [gpu]
-	docker run --rm -it -v .:/project \
+	docker run --rm -it --runtime=nvidia --gpus all -v .:/project \
 	--name $(IMG_NAME)-gpu $(IMG_NAME)-gpu
 
 
 docker-bash-gpu: ## Access container bash [gpu]
 	docker exec -it $(IMG_NAME)-gpu /bin/bash
 
+docker-clean-gpu: ## Remove Docker img [gpu]
+	docker rmi $(IMG_NAME)-gpu
 {% endif %}
 
 
