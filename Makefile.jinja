@@ -1,102 +1,150 @@
 .DEFAULT_GOAL := help
 IMG_NAME ?= {{img_name}}
 
-
+define prompt_cmd
+@ read -e -p " " -i "$(1)"  CMDtoEXECUTE; $$CMDtoEXECUTE
+endef
 
 {% if docker_type %}###### Docker ######{% endif %}
 {% if 'cpu' in docker_type %}
 docker-build: ## Build the Docker img
-	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .
+	$(call prompt_cmd,\
+	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .\
+	)
 
 
 docker-run: ## Run the Docker container
+	$(call prompt_cmd,\
 	docker run --rm -it -v .:/project \
-	--name $(IMG_NAME) $(IMG_NAME)
+	--name $(IMG_NAME) $(IMG_NAME)\
+	)
 
 
 docker-bash: ## Access container bash
-	docker exec -it $(IMG_NAME) /bin/bash
+	$(call prompt_cmd,\
+	docker exec -it $(IMG_NAME) /bin/bash\
+	)
 
 docker-clean: ## Remove Docker img
-	docker rmi $(IMG_NAME)
+	$(call prompt_cmd,\
+	docker rmi $(IMG_NAME)\
+	)
 {% endif %}
 {% if 'gpu' in docker_type %}
 docker-build-gpu: ## Build the Docker img [gpu]
-	docker build -t $(IMG_NAME)-gpu -f ./Docker/gpu/Dockerfile .
+	$(call prompt_cmd,\
+	docker build -t $(IMG_NAME)-gpu -f ./Docker/gpu/Dockerfile .\
+	)
 
 
 docker-run-gpu: ## Run the Docker container [gpu]
+	$(call prompt_cmd,\
 	docker run --rm -it --runtime=nvidia --gpus all -v .:/project \
-	--name $(IMG_NAME)-gpu $(IMG_NAME)-gpu
+	--name $(IMG_NAME)-gpu $(IMG_NAME)-gpu\
+	)
 
 
 docker-bash-gpu: ## Access container bash [gpu]
-	docker exec -it $(IMG_NAME)-gpu /bin/bash
+	$(call prompt_cmd,\
+	docker exec -it $(IMG_NAME)-gpu /bin/bash\
+	)
 
 docker-clean-gpu: ## Remove Docker img [gpu]
-	docker rmi $(IMG_NAME)-gpu
+	$(call prompt_cmd,\
+	docker rmi $(IMG_NAME)-gpu\
+	)
 {% endif %}
 
 
 ###### Project ######
 
 dev-install: ## uv sync
-	uv sync --all-groups
+	$(call prompt_cmd,\
+	uv sync --all-groups\
+	)
 
 lint: ## Run linter [dev]
-	uv run ruff check .
+	$(call prompt_cmd,\
+	uv run ruff check .\
+	)
 
 format: ## Run formatter [dev]
-	uv run ruff format --diff .
+	$(call prompt_cmd,\
+	uv run ruff format --diff .\
+	)
 
 tox-rerun: ## Launch Tox [dev, tox]
-	uv run tox --parallel
+	$(call prompt_cmd,\
+	uv run tox --parallel\
+	)
 
 tox-run: ## Launch Tox [dev, tox]
-	uv run tox -r --parallel
+	$(call prompt_cmd,\
+	uv run tox -r --parallel\
+	)
 
 test: ## Pytest with coverage
-	uv run pytest --cov --durations=5 --color=yes
+	$(call prompt_cmd,\
+	uv run pytest --cov --durations=5 --color=yes\
+	)
 
 pre-commit: ## Run pre-commit
-	uv run pre-commit run --all-files --show-diff-on-failure
+	$(call prompt_cmd,\
+	uv run pre-commit run --all-files --show-diff-on-failure\
+	)
 
 pre-commit-enforce: ## Install the pre-commit as a git hook (you can just run pre-commit without doing that by: `make pre-commit`)
-	uv run pre-commit install
+	$(call prompt_cmd,\
+	uv run pre-commit install\
+	)
 
 update-pre-commit-hooks: ## Update automatically the hooks for `pre-commit`
-	uv run pre-commit autoupdate
+	$(call prompt_cmd,\
+	uv run pre-commit autoupdate\
+	)
 
 
 ###### Docs ######
 
 docs-build: ## Build docs
 	{% if doc_tool == 'mkdocs' -%}
-	uv run mkdocs build
+	$(call prompt_cmd,\
+	uv run mkdocs build\
+	)
 	{% endif %}
 	{% if doc_tool == 'sphinx' -%}
-	echo "Not implemented"
+	$(call prompt_cmd,\
+	echo "Not implemented"\
+	)
 	{% endif %}
 
 docs-deploy: ## Deploy docs
 	{% if doc_tool == 'mkdocs' -%}
-	uv run mkdocs serve
+	$(call prompt_cmd,\
+	uv run mkdocs serve\
+	)
 	{% endif %}
 	{% if doc_tool == 'sphinx' -%}
-	echo "Not implemented"
+	$(call prompt_cmd,\
+	echo "Not implemented"\
+	)
 	{% endif %}
 
 docs-docker-build: ## Build docs using Docker container
 	{% if doc_tool == 'mkdocs' -%}
+	$(call prompt_cmd,\
 	docker run --rm -it -v .:/project \
-	--name $(IMG_NAME)-docs $(IMG_NAME) /bin/bash -c "cd project; uv sync --only-group mkdocs; uv run mkdocs build"
+	--name $(IMG_NAME)-docs $(IMG_NAME) /bin/bash -c "cd project; uv sync --only-group mkdocs; uv run mkdocs build"\
+	)
 	{% endif %}
 
 
 docs-docker-serve: ## Build docs using Docker container
 	{% if doc_tool == 'mkdocs' -%}
+	$(call prompt_cmd,\
 	docker run --rm -it -v .:/project -p 8000:8000 \
-	--name $(IMG_NAME)-docs $(IMG_NAME) /bin/bash -c  "cd project; uv sync --only-group mkdocs; uv run mkdocs serve -a 0.0.0.0:8000"
+	--name $(IMG_NAME)-docs $(IMG_NAME) /bin/bash -c  "cd project; uv sync --only-group mkdocs; uv run mkdocs serve -a 0.0.0.0:8000"\
+	)
 	{% endif %}
 
 
