@@ -1,5 +1,7 @@
+SHELL := /bin/bash
 .DEFAULT_GOAL := help
 IMG_NAME ?= {{img_name}}
+
 
 define prompt_cmd
 @ read -e -p " " -i "$(1)"  CMDtoEXECUTE; $$CMDtoEXECUTE
