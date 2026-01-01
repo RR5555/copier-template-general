@@ -1,0 +1,92 @@
+# Configuration file for the Sphinx documentation builder.
+#
+# For the full list of built-in configuration values, see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+
+from datetime import date
+
+# import sphinx_rtd_theme
+
+# -- Project information -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+
+project:str = '{{ project_name }}'
+author:str = '{{ user_name }}'
+copyright:str = f'{date.today().year}, {author}'
+# The full version, including alpha/beta/rc tags
+release:str = '0.0.1'
+
+# -- General configuration ---------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones.
+extensions:list[str] = [
+    'sphinx.ext.autodoc', # Include documentation from docstrings
+    'sphinx_rtd_theme', # 'Read the Docs' Sphinx Theme
+    'sphinx.ext.todo', # Support for todo items
+    'sphinx.ext.extlinks', # Markup to shorten external links
+    'sphinx_togglebutton', # Make it possible to add a "toggle button" to sections of your page
+    'sphinx_markdown_builder', # Add markdown generation support
+    'sphinx.ext.mathjax' # Math support for HTML outputs in Sphinx
+]
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path:list[str] = ['_templates']
+
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns:list[str] = []
+
+
+# -- Options for HTML output -------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for a list of builtin themes.
+
+# html_logo:str = 'fox_icon1_edit_small.jpeg'
+
+html_theme:str = 'sphinx_rtd_theme' #'alabaster'
+html_theme_options:dict[str, bool] = {
+    'collapse_navigation': False,
+    'sticky_navigation': False,
+}
+
+html_css_files:list[str] = [
+    'custom.css',
+]
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path:list[str] = ['_static']
+
+# -- Options for sphinx.ext.todo -------------------------------------------------
+
+# Display todo items: by default, todo items are excluded
+todo_include_todos:bool = True
+
+
+# -- Options for sphinx.ext.extlinks -------------------------------------------------
+
+
+extlinks:dict[str, tuple[str, str|None]] = {
+#   'bool': ('https://docs.python.org/3/library/stdtypes.html#boolean-values%s', None),
+#   'namespace': ('https://docs.python.org/3/library/argparse.html?highlight=namespace#argparse.Namespace%s', None),
+#   'optimizer': ('https://pytorch.org/docs/stable/optim.html#torch.optim.Optimizer%s', None),
+#   'none': ('https://docs.python.org/3/library/constants.html?highlight=none#None%s', None),
+#   'nn_func': ('https://pytorch.org/docs/stable/nn.functional.html%s', None),
+#   'pwcca_1806_05759': ('https://arxiv.org/abs/1806.05759%s', None)
+}
+
+
+# -- Options for sphinx.ext.autodoc -------------------------------------------------
+
+# To include the header for __init__
+# autoclass_content = 'both'
+autodoc_default_options:dict[str, str] = {
+	'special-members': '__init__',
+}
+

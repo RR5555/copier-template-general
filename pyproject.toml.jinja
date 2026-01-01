@@ -66,9 +66,19 @@ tox = [
 pre-commit = [
 	"pre-commit-uv; python_version >= '3.9'"
 ]
+{% if doc_tool == 'mkdocs' -%}
 mkdocs = [
     "mkdocstrings-python; python_version >= '3.9'",
     "mkdocs-gen-files; python_version >= '3.9'",
 	"mkdocs-literate-nav; python_version >= '3.9'",
 	"mkdocs-section-index; python_version >= '3.9'"
 ]
+{% endif -%}
+{% if doc_tool == 'sphinx' -%}
+sphinx = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "sphinx-togglebutton",
+    "sphinx-markdown-builder",
+]
+{% endif -%}
