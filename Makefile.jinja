@@ -11,7 +11,7 @@ endef
 {% if 'cpu' in docker_type %}
 docker-build: ## Build the Docker img
 	$(call prompt_cmd,\
-	docker build -t $(IMG_NAME) -f ./Docker/Dockerfile .\
+	docker build -t $(IMG_NAME) -f ./Docker/vanilla/Dockerfile .\
 	)
 
 
