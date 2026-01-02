@@ -9,9 +9,9 @@ ENV PATH="/usr/local/bin:$PATH"
 
 RUN uv python install 3.13
 
-# WORKDIR /root
+RUN mkdir /project
+WORKDIR /project
+
 # RUN uv init ...
-
-
-# WORKDIR /root/...
 # RUN uv add ...
+# RUN uv sync ...
