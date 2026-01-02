@@ -128,7 +128,7 @@ docs-deploy: ## Deploy docs
 	{% endif %}
 	{% if doc_tool == 'sphinx' -%}
 	$(call prompt_cmd,\
-	echo "Not implemented"\
+	cd ./docs/build && uv run python -m http.server\
 	)
 	{% endif %}
 
