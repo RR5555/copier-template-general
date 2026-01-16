@@ -116,7 +116,7 @@ docs-build: ## Build docs
 	{% endif %}
 	{% if doc_tool == 'sphinx' -%}
 	$(call prompt_cmd,\
-	echo "Not implemented"\
+	cd ./docs && make html\
 	)
 	{% endif %}
 
