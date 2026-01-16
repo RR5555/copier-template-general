@@ -2,6 +2,7 @@ project_programming_language:
   type: str
   help: What is the project programming language?
   multiselect: true
+  use_search_filter: true
   choices:
 
     "Ada":

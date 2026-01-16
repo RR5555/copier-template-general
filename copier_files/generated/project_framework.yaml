@@ -2,6 +2,7 @@ project_framework:
   type: str
   help: What is the project framework?
   multiselect: true
+  use_search_filter: true
   choices:
 
     "AiiDA":

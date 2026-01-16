@@ -2,6 +2,7 @@ project_environment:
   type: str
   help: What is the project environment?
   multiselect: true
+  use_search_filter: true
   choices:
 
     "Console":

@@ -2,6 +2,7 @@ project_natural_language:
   type: str
   help: What is the project natural language?
   multiselect: true
+  use_search_filter: true
   choices:
 
     "Afrikaans":

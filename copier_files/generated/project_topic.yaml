@@ -2,6 +2,7 @@ project_topic:
   type: str
   help: What is the project topic?
   multiselect: true
+  use_search_filter: true
   choices:
 
     "Adaptive Technologies":

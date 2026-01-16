@@ -2,6 +2,7 @@ project_operating_system:
   type: str
   help: What is the project operating system?
   multiselect: true
+  use_search_filter: true
   choices:
 
     "Android":

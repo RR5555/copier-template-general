@@ -2,6 +2,7 @@ project_intended_audience:
   type: str
   help: What is the project intended audience?
   multiselect: true
+  use_search_filter: true
   choices:
 
     "Customer Service":

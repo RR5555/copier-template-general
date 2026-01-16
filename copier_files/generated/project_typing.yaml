@@ -1,11 +1,11 @@
 project_typing:
   type: str
   help: What is the project typing?
+  default: "Typing :: Typed"
+  use_search_filter: true
   choices:
 
     "Stubs Only":
       value: "Typing :: Stubs Only"
     "Typed":
       value: "Typing :: Typed"
-
-  default: "Typing :: Typed"

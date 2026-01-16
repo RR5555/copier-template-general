@@ -1,7 +1,7 @@
 project_development_status:
   type: str
   help: What is the project development status?
-  use_shortcuts: true
+  use_search_filter: true
   choices:
 
     "1 - Planning":
